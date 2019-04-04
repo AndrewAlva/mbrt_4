@@ -1,4 +1,4 @@
-# mbrt_4
+# mbrt. 4 years
 4th anniversary of Mandelbrot Studio; web page to complement AR experience.
 
 ## Development Environment
