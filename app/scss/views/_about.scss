@@ -1,0 +1,118 @@
+#about-page{
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	padding: 20px 50px;
+
+	header{
+		margin-bottom: 50px;
+
+		h1{
+			font-size: 2em;
+			font-weight: 100;
+		}
+	}
+
+	.intro{
+		position: relative;
+		display: inline-block;
+		width: 50%;
+
+		p{
+			font-size: 1.1em;
+			line-height: 1.5em;
+			text-align: justify;
+			margin-bottom: 20px;
+
+			.quote{
+				cursor: pointer;
+				border-bottom: 1px solid $gray;
+				@include transitions-ease(.2s);
+
+				&:hover{
+					@include transitions-ease(1s);
+					border-bottom: 1px solid rgba(255,255,255,0);
+				}
+			}
+		}
+	}
+
+	.gracias{
+		margin-top: 70px;
+
+		h2{
+			font-family: serif;
+			font-style: italic;
+			font-size: 4em;
+			font-weight: 100;
+			line-height: 1em;
+
+			&:last-child{
+				margin-left: 1.5em;
+			}
+		}
+	}
+
+	.feature{
+		position: relative;
+		display: inline-block;
+		width: 25%;
+		margin-left: 25%;
+		vertical-align: top;
+
+		.card{
+			position: absolute;
+			top: 0;
+			width: 100%;
+			// border: 1px solid orange;
+
+			.illustration{
+				margin-bottom: 15px;
+
+				img{
+					width: 100%;
+				}
+			}
+
+			.copy{
+				font-size: .8em;
+				font-weight: 100;
+				font-style: italic;
+				line-height: 1.5em;
+
+				.author{
+					white-space: nowrap;
+				}
+			}
+		}
+	}
+
+	.guests-list{
+		position: relative;
+		width: 70%;
+		margin: 100px auto 200px;
+		padding: 50px;
+
+		canvas{
+			position: absolute;
+			width: 100%;
+			height: 100%;
+			top: 0; left: 0;
+			border: 1px solid orange;
+		}
+
+		.list-wrap{
+			list-style-type: none;
+
+			li{
+				position: relative;
+				display: inline-block;
+				margin: 0 5px;
+
+				&.guest{
+					cursor: pointer;
+				}
+			}
+		}
+	}
+}

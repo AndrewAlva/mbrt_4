@@ -1,0 +1,47 @@
+extends templates/layout.jade
+
+block content
+	#about-page
+		header
+			h1 Mandelbrot is 4
+
+		.intro
+			p
+				|It's been a while since we started this journey, and it has been everything but an “easy path”, as Rocky said: 
+				span.quote “You, me, or nobody is gonna hit as hard as life”
+				|, and he was right; we took his advice, got ready to take some punches and kept moving forward.
+			p
+				|Now, after a few years, we’ve even come to appreciate the beauty inside that chaos; after all, most beautiful things aren’t predictable: 
+				span.quote “Clouds are not spheres, mountains are not cones, coastlines are not circles, nor does lightning travel in a straight line”
+				|; and thanks to you, we were patient enough to understand this. So there's only one thing left to say:
+
+			blockquote.gracias
+				h2 Gracias
+				h2 de corazón
+
+		aside.feature
+			#rocky-card.card
+				.illustration
+					img(src="img/rocky.gif", alt="The world ain't all sunshine and rainbows")
+
+				h3.copy 
+					//- |If you know Sylvester Stallone, please show this to him; his work has been a massive inspiration for so many of us.
+					|The world ain't all sunshine and rainbows. 
+					span.author – Rocky Balboa
+
+			//- #benoit-card.card
+				.illustration
+					img(src="img/benoit.gif", alt="The father of fractals")
+
+				h3.copy Thanks Benoit, for unlocking a new way to perceive the universe (and for such a badass quote).
+
+		section.guests-list
+			canvas#guests-canvas
+			ul.list-wrap
+				li.year 2014
+				li.guest Ulises.
+				li.guest Mauro T.
+				li.guest Pollito.
+				li.guest Juani (Flacode).
+				li.guest Chaps.
+
