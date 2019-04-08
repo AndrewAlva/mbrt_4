@@ -1,0 +1,23 @@
+@font-face {
+	font-family: 'Founders-L';
+	font-display: auto;
+	src:url('../fonts/Founders-Grotesk-Light.woff2') format('woff2'),
+		url('../fonts/Founders-Grotesk-Light.woff') format('woff'),
+		url('../fonts/Founders-Grotesk-Light.otf') format('opentype');
+}
+
+@font-face {
+	font-family: 'Founders-R';
+	font-display: auto;
+	src:url('../fonts/Founders-Grotesk-Regular.woff2') format('woff2'),
+		url('../fonts/Founders-Grotesk-Regular.woff') format('woff'),
+		url('../fonts/Founders-Grotesk-Regular.otf') format('opentype');
+}
+
+@font-face {
+	font-family: 'Founders-M';
+	font-display: auto;
+	src:url('../fonts/Founders-Grotesk-Medium.woff2') format('woff2'),
+		url('../fonts/Founders-Grotesk-Medium.woff') format('woff'),
+		url('../fonts/Founders-Grotesk-Medium.otf') format('opentype');
+}

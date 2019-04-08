@@ -8,7 +8,9 @@
 @import 'global/vars';
 @import 'global/mixins';
 @import 'global/default';
+@import 'global/fonts';
+@import 'global/grid';
 
-@import 'views/home';
 @import 'views/intro';
+@import 'views/home';
 @import 'views/about'

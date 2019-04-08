@@ -1,0 +1,57 @@
+.intro-grid{
+	position: relative;
+	width: 100%;
+	max-width: 1600px;
+	min-height: 100%;
+	margin: 0 auto;
+
+	.inner-wrap{
+		position: absolute;
+		width: 100%;
+		height: 100%;
+	}
+
+	.col-1, .col-2, .col-3, .col-4, .col-5, .col-6, .col-7, .col-8, .col-9, .col-10, .col-11, .col-12{
+		position: relative;
+		display: inline-block;
+	}
+
+	.col-1{width: $twelvecol-1;}
+	.col-2{width: $twelvecol-2;}
+	.col-3{width: $twelvecol-3;}
+	.col-4{width: $twelvecol-4;}
+	.col-5{width: $twelvecol-5;}
+	.col-6{width: $twelvecol-6;}
+	.col-7{width: $twelvecol-7;}
+	.col-8{width: $twelvecol-8;}
+	.col-9{width: $twelvecol-9;}
+	.col-10{width: $twelvecol-10;}
+	.col-11{width: $twelvecol-11;}
+	.col-12{width: $twelvecol-12;}
+
+	.push-1{margin-right: $twelvecol-1;}
+	.push-2{margin-right: $twelvecol-2;}
+	.push-3{margin-right: $twelvecol-3;}
+	.push-4{margin-right: $twelvecol-4;}
+	.push-5{margin-right: $twelvecol-5;}
+	.push-6{margin-right: $twelvecol-6;}
+	.push-7{margin-right: $twelvecol-7;}
+	.push-8{margin-right: $twelvecol-8;}
+	.push-9{margin-right: $twelvecol-9;}
+	.push-10{margin-right: $twelvecol-10;}
+	.push-11{margin-right: $twelvecol-11;}
+	.push-12{margin-right: $twelvecol-12;}
+
+	.offset-1{margin-left: $twelvecol-1;}
+	.offset-2{margin-left: $twelvecol-2;}
+	.offset-3{margin-left: $twelvecol-3;}
+	.offset-4{margin-left: $twelvecol-4;}
+	.offset-5{margin-left: $twelvecol-5;}
+	.offset-6{margin-left: $twelvecol-6;}
+	.offset-7{margin-left: $twelvecol-7;}
+	.offset-8{margin-left: $twelvecol-8;}
+	.offset-9{margin-left: $twelvecol-9;}
+	.offset-10{margin-left: $twelvecol-10;}
+	.offset-11{margin-left: $twelvecol-11;}
+	.offset-12{margin-left: $twelvecol-12;}
+}
