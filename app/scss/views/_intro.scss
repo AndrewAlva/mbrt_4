@@ -25,7 +25,8 @@
 			h2{
 				float: right;
 				height: .66em;
-				line-height: 1.02em;
+				// line-height: 1.02em;
+				line-height: 1.1em;
 				font-family: 'Founders-R', sans-serif;
 				// font-size: 16em;
 				font-size: 16.6vw;
@@ -51,7 +52,8 @@
 			opacity: .9;
 			position: absolute;
 			width: 97.2%;
-			height: 507px;
+			// height: 507px;
+			height: 0;
 			margin: auto;
 			top: 0; bottom: 0;
 			left: 0;
@@ -63,6 +65,12 @@
 			
 			// background-blend-mode: multiply;
 			mix-blend-mode: multiply;
+
+			@include transitions-ease(1.8s);
+
+			&.show{
+				height: 507px;
+			}
 		}
 	}
 
@@ -76,6 +84,7 @@
 			top: 70px;
 			right: 0;
 			font-size: 1.2em;
+			height: .66em;
 			font-family: 'Founders-R';
 			font-weight: 100;
 		}
