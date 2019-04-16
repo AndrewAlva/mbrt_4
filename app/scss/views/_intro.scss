@@ -3,60 +3,25 @@
 	width: 100%;
 	height: 100%;
 	margin: 0;
-	padding: 60px 25px;
+	padding: 0 25px;
 	background-color: $intro-bg;
 	color: $intro-text-color;
 	overflow: hidden;
 
-	@media (min-width: 1441px){
-		padding: 60px 50px;
-	}
-
 	.team-wrap{
 		position: relative;
 		height: 100%;
-
-		.introduction{
-			position: absolute;
-			width: 100%;
-			height: 100%;
-			text-align: right;
-
-			h2{
-				float: right;
-				height: .66em;
-				// line-height: 1.02em;
-				line-height: 1.1em;
-				font-family: 'Founders-R', sans-serif;
-				// font-size: 16em;
-				font-size: 16.6vw;
-				letter-spacing: -0.03em;
-				white-space: nowrap;
-				text-transform: uppercase;
-			}
-
-			.count{
-				position: absolute;
-				width: 100%;
-				bottom: 0;
-
-				h2.fourth{
-					margin-bottom: 30px;
-					margin-right: -0.02em;
-				}
-			}
-		}
 
 		.portrait-container{
 			overflow: hidden;
 			z-index: 1;
 			opacity: .9;
 			position: absolute;
-			width: 97.2%;
+			width: 96.87%;
 			height: 507px;
 			// height: 0;
-			top: 50%; left: 50%;
-			@include translate(-50%,-50%);
+			margin: auto;
+			top: 0; bottom: 20px;
 			@include transitions-ease(1.8s);
 			mix-blend-mode: multiply;
 
@@ -66,7 +31,7 @@
 				height: 100%;
 				top: 50%; left: 50%;
 				transform: translate(-50%,-50%) scale(1.2);
-				background-image: url('https://images.unsplash.com/photo-1475483768296-6163e08872a1?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1500&q=80');
+				background-image: url('../img/team_cover.jpg');
 				background-size: cover;
 				background-repeat: no-repeat;
 				background-position: center;
@@ -102,53 +67,83 @@
 		}
 	}
 
+	.intro-wrap{
+		position: absolute;
+		top: 0; left: 0;
+		// width: 100%;
+		height: 100%;
+		padding-top: 55px;
+		text-align: right;
+
+		h2{
+			float: right;
+			height: .71em;
+			// line-height: 1.02em;
+			line-height: 1.1em;
+			font-family: 'Founders-R', sans-serif;
+			// font-size: 16em;
+			font-size: 16.6vw;
+			letter-spacing: -0.02em;
+			white-space: nowrap;
+			text-transform: uppercase;
+		}
+
+		.years{
+			position: relative;
+			right: -1.5vw;
+		}
+
+		.count{
+			position: absolute;
+			width: 100%;
+			bottom: -3.5vw;
+
+			h2.fourth{
+				margin-bottom: 10px;
+				margin-right: -0.5vw;
+			}
+			h2.year{
+				margin-right: -0.8vw;
+			}
+		}
+	}
+
 	.thanks-wrap{
 		position: absolute;
 		height: 100%;
 		text-transform: uppercase;
 
-		.cta{
+		.letter-body{
 			position: absolute;
-			top: 70px;
-			right: 0;
-			font-size: 1.2em;
-			height: .66em;
-			font-family: 'Founders-R';
-			font-weight: 100;
-		}
+			width: 89%;
+			// bottom: 80px;
+			top: 18vw;
 
-		.letter-container{
-			position: absolute;
-			bottom: 0;
+			.intro{
+				margin-bottom: 75px;
 
-			.circle{
-				display: block;
-				position: absolute;
-				top: -80px;
-				left: -93px;
-				width: 160px;
-				height: 160px;
-				border-radius: 50%;
-				background-color: $pink;
+				h1{
+					height: .77em;
+					white-space: nowrap;
+					font-family: 'Founders-R', sans-serif;
+					font-size: 2em;
+					font-weight: 100;
+					line-height: 1.15em;
+					@include smoothFont;
+
+					&:not(:last-child){
+						margin-bottom: 5px;
+					}
+				}
 			}
 
 			p{
 				position: relative;
-				margin-bottom: 35px;
 				line-height: 1.4em;
 
-				&:nth-child(odd){
-					text-align: right;
+				&:not(:last-child){
+					margin-bottom: 20px;
 				}
-			}
-
-			.thanks{
-				height: .9em;
-				margin-top: 60px;
-				margin-bottom: 0;
-				font-size: 1.2em;
-				font-family: 'Founders-R';
-				font-weight: 100;
 			}
 		}
 	}
