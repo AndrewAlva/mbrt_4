@@ -119,6 +119,18 @@
 	display: flex;
 }
 
+@mixin flexWrap{
+	-webkit-flex-wrap: wrap;
+	-ms-flex-wrap: wrap;
+	flex-wrap: wrap;
+}
+
+@mixin flexAlignContent($alignment){
+	-webkit-align-content: $alignment;
+	-ms-flex-line-pack: $alignment;
+	align-content: $alignment;
+}
+
 @mixin flexDirection-Vert{
 	-webkit-box-orient: vertical;
 	-webkit-box-direction: normal;

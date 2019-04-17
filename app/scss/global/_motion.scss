@@ -1,11 +1,12 @@
 .mask-container{
 	position: relative;
+	vertical-align: top;
 	display: inline-block;
 	overflow: hidden;
 	height: 100%;
 	
 	&.padded{
-		padding-right: 15px;
+		padding-left: 15px;
 		padding-bottom: 15px;
 		@include content-box;
 	}
