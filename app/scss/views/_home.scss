@@ -1,0 +1,91 @@
+#home-wrap{
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	padding: 60px 80px 50px;
+	color: $intro-text-color;
+	background-color: $intro-bg;
+	overflow: hidden;
+
+	.inner-wrap{
+		position: relative;
+		width: 100%;
+		height: 100%;
+	}
+
+	.mbrt-head{
+		z-index: 1;
+		position: absolute;
+		top: 0; left: 0;
+		width: 100%;
+		height: 61px;
+
+		.four-logo{
+			position: absolute;
+			top: 0; right: 0;
+			width: 61px;
+			height: 61px;
+			border-radius: 50%;
+			background-color: #002d85;
+			cursor: pointer;
+		}
+	}
+
+	.illustration-body{
+		position: absolute;
+		width: 567px;
+		height: 100%;
+		margin: auto;
+		left: 0; right: 0;
+		border: 1px solid pink;
+
+		._title{
+			position: absolute;
+			width: 100%;
+			height: 1em;
+			margin: auto;
+			top: 0; bottom: 0;
+			text-align: center;
+			font-size: 16em;
+			font-family: 'Founders-R';
+			text-transform: uppercase;
+
+			.division{
+				position: absolute;
+				margin: auto;
+				mix-blend-mode: multiply;
+
+				&.left{left: -280px;}
+				&.right{right: -280px;}
+			}
+		}
+
+		.illus-container{
+			position: absolute;
+			width: 100%;
+			height: 100%;
+			background-color: $intro-bg;
+		}
+	}
+
+	.mbrt-footer{
+		position: absolute;
+		bottom: 0; left: 0;
+		width: 100%;
+		text-transform: uppercase;
+		font-size: 1.1em;
+		font-family: 'Founders-R', sans-serif;
+		font-weight: 100;
+		@include smoothFont;
+
+		.author-wrap{
+			position: absolute;
+			bottom: 0; right: 0;
+			text-align: right;
+
+			.mbrt-logo{
+				width: 64px;
+			}
+		}
+	}
+}
