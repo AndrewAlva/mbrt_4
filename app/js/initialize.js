@@ -13,5 +13,9 @@ window.onload = function() {
     console.log("Page fully loaded.");
     console.log("Initialize.js");
 
+    // Slide up: intro animation
     Intro.init();
+
+    // Activate 3D rotation layers
+    Perspective.init();
 }
