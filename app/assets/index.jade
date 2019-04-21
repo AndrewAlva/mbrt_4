@@ -1,31 +1,31 @@
 extends templates/layout.jade
 
 block content
-	#home-wrap
+	#home-wrap.perspective-1000
 		.inner-wrap
 			header.mbrt-head
 				.four-logo
 
-			section.illustration-body
-				h1._title
+			section.illustration-body.p_layer.perspective-500
+				h1._title.p_layer
 					span.division.left#mouseX Fo
 					span.division.right#mouseY ur
 
 				.illus-container
-					.mb-stairs
+					.mb-stairs.p_layer
 						.steps.step-1
 						.steps.step-2
 						.steps.step-3
 						.steps.step-4
 
-					.mb-cilinder
-					.mb-square.clip
+					.mb-cilinder.p_layer
+					.mb-square.clip.p_layer
 						.mb-arch
 
-					.mb-rect
-					.mb-circle
+					.mb-rect.p_layer
+					.mb-circle.p_layer
 
-			footer.mbrt-footer
+			footer.mbrt-footer.p_layer
 				.instructions-wrap
 					p
 						span.mask-container
@@ -40,9 +40,9 @@ block content
 							span.up-in
 								|Site by 
 								img(src="img/mbrt_logo.png", alt="mandelbrot studio").mbrt-logo
-					p 
+					p
 						span.mask-container
 							span.up-in Fourth Anniversary
 
 
-	canvas#mouse-tester
+	//- canvas#mouse-tester

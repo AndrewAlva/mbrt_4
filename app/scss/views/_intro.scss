@@ -8,7 +8,7 @@
 	color: $intro-text-color;
 	overflow: hidden;
 
-	.intro-wrap{
+	.years-wrap{
 		position: absolute;
 		top: 0; left: 0;
 		height: 100%;
@@ -39,9 +39,15 @@
 		}
 	}
 
+	.intro-grid{
+		position: relative;
+		z-index: -1;
+	}
+
 	.team-wrap{
 		position: relative;
 		height: 100%;
+		z-index: -1;
 
 		.portrait-container{
 			overflow: hidden;
@@ -76,9 +82,9 @@
 					@include translate(-50%,-50%);
 					width: 105%;
 					height: 105%;
-					background-color: #fff;
+					background-color: $intro-bg;
 					@include transitions-ease(1.8s);
-					border: 1px solid red;
+					// border: 1px solid red;
 				}
 			}
 
