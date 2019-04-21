@@ -1,0 +1,49 @@
+.four-logo{
+	width: 61px;
+	height: 61px;
+	border-radius: 50%;
+	background-color: $graph-pink;
+	cursor: pointer;
+	overflow: hidden;
+
+	.green-rect{
+		position: absolute;
+		width: 100%;
+		height: 100%;
+		left: -66.66%;
+		background-color: $graph-green;
+	}
+
+	.blue-square{
+		position: absolute;
+		width: 100%;
+		height: 100%;
+		background-color: $graph-blue-dark;
+	}
+
+	.blue-circle{
+		position: absolute;
+		width: 60px;
+		height: 60px;
+		border-radius: 50%;
+		top: 20%;
+		left: 24%;
+		background-color: $graph-blue-light;
+	}
+
+	.wrap{
+		perspective: 20px;
+		position: absolute;
+		width: 100%;
+		height: 100%;
+	}
+
+	.rotated-wrap{
+		perspective: 20px;
+		position: absolute;
+		width: 100%;
+		height: 150%;
+		@include rotate(45deg);
+		left: 42%;
+	}
+}
