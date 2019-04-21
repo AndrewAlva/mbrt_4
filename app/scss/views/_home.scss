@@ -28,10 +28,13 @@
 
 	.illustration-body{
 		position: absolute;
-		width: 567px;
+		// width: 567px;
+		width: 534px;
 		height: 100%;
+		max-height: 780px;
 		margin: auto;
 		left: 0; right: 0;
+		top: 0; bottom: 0;
 		border: 1px solid pink;
 
 		._title{
