@@ -1,0 +1,29 @@
+.mbrt-slot-hover{
+	// transition: transform 0.4s cubic-bezier(.57,0,0.2,1);
+	@include transitions-ease(.4s);
+
+	.slot-mask{
+		display: block;
+		overflow: hidden;
+	}
+
+	.slot-content{
+		position: relative;
+		display: inline-block;
+		// transition: transform 0.4s cubic-bezier(.57,0,0.2,1);
+		@include transitions-ease(.4s);
+
+		&:before{
+			content: attr(hidden-slot-text);
+			position: absolute;
+			top: 120%;
+			opacity: .5;
+		}
+	}
+
+	&:hover{
+		.slot-content{
+			@include translate(0, -120%);
+		}
+	}
+}

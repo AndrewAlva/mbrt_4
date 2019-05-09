@@ -13,12 +13,15 @@
 @import 'global/motion';
 @import 'global/graphs';
 @import 'global/perspective';
+@import 'global/links';
 
 @import 'modules/four-logo';
+@import 'modules/mbrt-head';
 
 @import 'views/intro';
 @import 'views/home';
 @import 'views/about';
+@import 'views/splash';
 
 #mouse-tester{
 	position: absolute;

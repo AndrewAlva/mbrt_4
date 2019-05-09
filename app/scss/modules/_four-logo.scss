@@ -1,10 +1,15 @@
 .four-logo{
-	width: 61px;
-	height: 61px;
+	width: 41px;
+	height: 41px;
 	border-radius: 50%;
 	background-color: $graph-pink;
 	cursor: pointer;
 	overflow: hidden;
+
+	@media (min-width: 992px){
+		width: 61px;
+		height: 61px;
+	}
 
 	.green-rect{
 		position: absolute;
