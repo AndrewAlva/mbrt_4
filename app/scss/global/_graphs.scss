@@ -1,154 +1,311 @@
-.mb-up-circle{
-	position: absolute;
-	top: -125px;
-	left: 65px;
-	width: 113px;
-	height: 113px;
-	border-radius: 50%;
-	background-color: $graph-blue-light;
-}
+.illus-container{
+	// pointer-events: none;
 
-.mb-stairs{
-	position: absolute;
-	// left: -50px; //good
-	left: -20px; top: -50px;
-	width: 291px;
-	height: 411px;
-
-	.steps{
-		position: relative;
-		height: 38px;
-		background-color: $graph-red;
-	}
-
-	.step-1{width: 40px;}
-	.step-2{width: 76px;}
-	.step-3{width: 113px;}
-	.step-4{
-		width: 100%;
-		height: 302px;
-	}
-}
-
-.mb-rect-top-right{
-	position: absolute;
-	top: 0;
-	right: 12px;
-	width: 221px;
-	height: 366px;
-	background-color: $graph-blue-light;
-}
-
-.mb-dune-stairs{
-	position: absolute;
-	top: 0;
-	right: 134px;
-	width: 378px;
-	height: 271px;
-	background-color: $graph-pink;
-
-	.door{
+	.mb-up-circle{
 		position: absolute;
-		width: 54px;
-		height: 106px;
-		bottom: 0;
-		left: 110px;
-		
-		.circle{
-			position: absolute;
-			top: -23px;
-			width: 100%;
-			height: 46px;
-			border-radius: 50%;
-			background-color: $graph-purple;
+		top: -125px;
+		left: 65px;
+		width: 113px;
+		height: 113px;
+		border-radius: 50%;
+		background-color: $graph-blue-light;
+	}
+
+	.mb-stairs{
+		position: absolute;
+		// left: -50px; //good
+		left: -20px; top: -50px;
+		width: 291px;
+		height: 411px;
+
+		.steps{
+			position: relative;
+			height: 38px;
+			background-color: $graph-red;
 		}
-		.rect{
-			position: absolute;
+
+		.step-1{width: 40px;}
+		.step-2{width: 76px;}
+		.step-3{width: 113px;}
+		.step-4{
 			width: 100%;
-			height: 100%;
-			background-color: $graph-purple;
-			overflow: hidden;
+			height: 302px;
+		}
+	}
 
-			.white-stairs{
+	.mb-rect-top-right{
+		position: absolute;
+		top: 0;
+		right: 12px;
+		width: 221px;
+		height: 366px;
+		background-color: $graph-blue-light;
+	}
+
+	.mb-dune-stairs{
+		position: absolute;
+		top: 0;
+		right: 134px;
+		width: 378px;
+		height: 271px;
+		background-color: $graph-pink;
+
+		.door{
+			position: absolute;
+			width: 54px;
+			height: 106px;
+			bottom: 0;
+			left: 110px;
+			
+			.circle{
 				position: absolute;
-				left: 10px;
-				bottom: 0;
-				width: 100px;
-				height: 45px;
+				top: -23px;
+				width: 100%;
+				height: 46px;
+				border-radius: 50%;
+				background-color: $graph-purple;
+			}
+			.rect{
+				position: absolute;
+				width: 100%;
+				height: 100%;
+				background-color: $graph-purple;
+				overflow: hidden;
 
-				.steps{
-					position: relative;
-					height: 25%;
-					float: right;
-					background-color: #fff;
+				.white-stairs{
+					position: absolute;
+					left: 10px;
+					bottom: 0;
+					width: 100px;
+					height: 45px;
 
-					&.step-1{width: 64px;}
-					&.step-2{width: 76px;}
-					&.step-3{width: 88px;}
-					&.step-4{width: 100%;}
+					.steps{
+						position: relative;
+						height: 25%;
+						float: right;
+						background-color: #fff;
+
+						&.step-1{width: 64px;}
+						&.step-2{width: 76px;}
+						&.step-3{width: 88px;}
+						&.step-4{width: 100%;}
+					}
 				}
 			}
 		}
 	}
+
+	.mb-gray-rect{
+		position: absolute;
+		width: 264px;
+		height: 120px;
+		// bottom: 98px;
+		top: 562px;
+		left: 7px;
+		background-color: $graph-gray;
+	}
+
+	.mb-bottom-stairs{
+		position: absolute;
+		right: 162px;
+		bottom: -60px;
+		width: 121px;
+
+		.steps{
+			position: relative;
+			background-color: $graph-green;
+
+			&.step-1{width: 100%; height: 190px;}
+			&.step-2{width: 93px; height: 26px;}
+			&.step-3{width: 68px; height: 26px;}
+			&.step-4{width: 42px; height: 26px;}
+		}
+
+		.window-dark{
+			position: absolute;
+			bottom: 82px;
+			left: 41px;
+			width: 29px;
+			height: 62px;
+			background-color: $graph-purple;
+		}
+	}
+
+	.mb-square{
+		position: absolute;
+		left: 7px;
+		top: 271px;
+		width: 363px;
+		height: 344px;
+		background-color: $graph-blue-light;
+
+		&.clip{overflow: hidden;}
+
+		.mb-dark-arch{
+			position: absolute;
+			width: 50px;
+			height: 190px;
+			top: 0;
+			right: 20px;
+			border-bottom-right-radius: 30px;
+			border-bottom-left-radius: 30px;
+			background-color: $graph-purple;
+		}
+	}
+
+	.mb-arch{
+		position: absolute;
+		bottom: 0;
+		left: -30px;
+		width: 296px;
+		height: 344px;
+		border-top-left-radius: 150px;
+		border-top-right-radius: 150px;
+		background-color: $graph-white;
+	}
+
+	.mb-rect{
+		position: absolute;
+		width: 100%;
+		height: 83px;
+		background-color: $graph-green;
+		margin: auto;
+		right: -23px;
+		top: 325px;
+	}
+
+	.mb-rect-bottomright{
+		position: absolute;
+		bottom: 48px;
+		right: 13px;
+		width: 219px;
+		height: 363px;
+		background-color: $graph-pink;
+	}
+
+	.mb-drop-white{
+		position: absolute;
+		width: 221px;
+		height: 233px;
+		top: 0;
+		right: 48px;
+
+		.right-drop{
+			position: absolute;
+			top: 0; right: 0;
+			width: 86px;
+			height: 136px;
+			background-color: #fff;
+			border-radius: 0px 70px 70px 0px;
+		}
+
+		.left-drop{
+			position: absolute;
+			top: 0; left: 0;
+			width: 135px;
+			height: 233px;
+			background-color: #fff;
+			border-radius: 135px 0 0 0;
+		}
+	}
+
+	.mb-cilinder{
+		position: absolute;
+		top: 136px;
+		right: 5%;
+		width: 278px;
+		height: 190px;
+		border-radius: 190px;
+		background-color: $graph-red;
+	}
+
+	.mb-circle-inner{
+		position: absolute;
+		top: 136px;
+		right: 5%;
+		width: 190px;
+		height: 190px;
+		border-radius: 50%;
+		background-color: $graph-yellow;
+	}
+
+	.mb-circle-pink{
+		position: absolute;
+		top: 337px;
+		right: 329px;
+		width: 161px;
+		height: 161px;
+		border-radius: 50%;
+		overflow: hidden;
+		background-color: $graph-pink;
+
+		.inner-circle{
+			position: absolute;
+			right: 94px;
+			bottom: 15px;
+			width: 208px;
+			height: 208px;
+			border-radius: 50%;
+			background-color: $graph-blue-light;
+		}
+	}
+
+	.mb-circle-eclipse{
+		position: absolute;
+		bottom: 82px;
+		right: 41px;
+		width: 94px;
+		height: 94px;
+		background-color: #fff;
+		border-radius: 50%;
+	}
+
+	.mb-duocircle{
+		position: absolute;
+		width: 56px;
+		height: 56px;
+		border-radius: 50%;
+		// left: 98px;
+		// bottom: 132px;
+		top: 592px;
+		right: 380px;
+		background-color: $graph-white;
+		overflow: hidden;
+
+		.inner-rect-red{
+			position: absolute;
+			bottom: 0;
+			width: 100%;
+			height: 34px;
+			background-color: $graph-red;
+		}
+	}
+
+	.mb-wrap{
+		position: absolute;
+
+		&.halfwidth{width: 50%;}
+		&.fullwidth{width: 100%;}
+		&.doublewidth{width: 200%;}
+		&.triplewidth{width: 300%;}
+		&.halfheight{height: 50%;}
+		&.fullheight{height: 100%;}
+		&.doubleheight{height: 200%;}
+		&.tripleheight{height: 300%;}
+
+		&.top{top: 0;}
+		&.right{right: 0;}
+		&.bottom{bottom: 0;}
+		&.left{left: 0;}
+	}
 }
 
-.mb-square{
-	position: absolute;
-	left: 7px;
-	top: 271px;
-	width: 363px;
-	height: 344px;
-	background-color: $graph-blue-light;
 
-	&.clip{overflow: hidden;}
-}
 
-.mb-arch{
-	position: absolute;
-	bottom: 0;
-	left: -30px;
-	width: 296px;
-	height: 344px;
-	border-top-left-radius: 150px;
-	border-top-right-radius: 150px;
-	background-color: $graph-white;
-}
 
-.mb-rect{
-	position: absolute;
-	width: 100%;
-	height: 83px;
-	background-color: $graph-green;
-	margin: auto;
-	right: -23px;
-	top: 325px;
-}
 
-.mb-rect-bottomright{
-	position: absolute;
-	bottom: 48px;
-	right: 13px;
-	width: 219px;
-	height: 363px;
-	background-color: $graph-pink;
-}
 
-.mb-cilinder{
-	position: absolute;
-	top: 136px;
-	right: 5%;
-	width: 278px;
-	height: 190px;
-	border-radius: 190px;
-	background-color: $graph-red;
-}
 
-.mb-circle-inner{
-	position: absolute;
-	top: 136px;
-	right: 5%;
-	width: 190px;
-	height: 190px;
-	border-radius: 50%;
-	background-color: $graph-yellow;
-}
+
+
+
