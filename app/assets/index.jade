@@ -25,14 +25,13 @@ block content
 					.mb-rect-top-right.p_layer
 
 					.mb-dune-stairs.p_layer
+						include _modules/svgs/_mb-dune.jade
 						.door
-							.circle
-							.rect
-								.white-stairs
-									.steps.step-1
-									.steps.step-2
-									.steps.step-3
-									.steps.step-4
+							.white-stairs
+								.steps.step-1
+								.steps.step-2
+								.steps.step-3
+								.steps.step-4
 
 					.mb-rect.p_layer
 
@@ -49,31 +48,28 @@ block content
 						.mb-arch
 						.mb-dark-arch
 
-						.mb-wrap.triplewidth.tripleheight.bottom.right.p_layer
-							.mb-wave 
-								.circle-1
-								.circle-2
+						.mb-wrap.fullwidth.fullheight.bottom.right
+							include _modules/svgs/_mb-wave.jade
 
 					.mb-wrap.triplewidth.fullheight.top.right.p_layer
 						.mb-circle-pink
 							.inner-circle
 
 					.mb-drop-white.p_layer
-						.right-drop
-						.left-drop
+						include _modules/svgs/_mb-drop-white.jade
 
 					.mb-cilinder.p_layer
 					.mb-circle-inner.p_layer
 
 					.mb-wrap.doublewidth.bottom.right.p_layer
-						.mb-circle-eclipse
+						include _modules/svgs/_mb-circle-eclipse.jade
 
 					.mb-wrap.triplewidth.tripleheight.top.right.p_layer
 						.mb-duocircle
 							.inner-rect-red
 
 
-			footer.mbrt-footer.p_layer
+			footer.mbrt-footer
 				.instructions-wrap
 					p
 						span.mask-container

@@ -13,8 +13,8 @@
 
 	.mb-stairs{
 		position: absolute;
-		// left: -50px; //good
-		left: -20px; top: -50px;
+		top: 0;
+		left: -22px;
 		width: 291px;
 		height: 411px;
 
@@ -48,7 +48,6 @@
 		right: 134px;
 		width: 378px;
 		height: 271px;
-		background-color: $graph-pink;
 
 		.door{
 			position: absolute;
@@ -56,40 +55,28 @@
 			height: 106px;
 			bottom: 0;
 			left: 110px;
+			border-top-left-radius: 27px;
+			border-top-right-radius: 27px;
+			background-color: $graph-purple;
+			overflow: hidden;
 			
-			.circle{
+			.white-stairs{
 				position: absolute;
-				top: -23px;
-				width: 100%;
-				height: 46px;
-				border-radius: 50%;
-				background-color: $graph-purple;
-			}
-			.rect{
-				position: absolute;
-				width: 100%;
-				height: 100%;
-				background-color: $graph-purple;
-				overflow: hidden;
+				left: 10px;
+				bottom: 0;
+				width: 100px;
+				height: 45px;
 
-				.white-stairs{
-					position: absolute;
-					left: 10px;
-					bottom: 0;
-					width: 100px;
-					height: 45px;
+				.steps{
+					position: relative;
+					height: 25%;
+					float: right;
+					background-color: #fff;
 
-					.steps{
-						position: relative;
-						height: 25%;
-						float: right;
-						background-color: #fff;
-
-						&.step-1{width: 64px;}
-						&.step-2{width: 76px;}
-						&.step-3{width: 88px;}
-						&.step-4{width: 100%;}
-					}
+					&.step-1{width: 64px;}
+					&.step-2{width: 76px;}
+					&.step-3{width: 88px;}
+					&.step-4{width: 100%;}
 				}
 			}
 		}
@@ -107,7 +94,7 @@
 
 	.mb-bottom-stairs{
 		position: absolute;
-		right: 162px;
+		right: 164px;
 		bottom: -60px;
 		width: 121px;
 
@@ -155,28 +142,9 @@
 		.mb-wave{
 			position: absolute;
 			bottom: 0;
-			right: 32px;
+			right: 37px;
 			width: 329px;
 			height: 344px;
-
-			.circle-1{
-				position: absolute;
-				top: 0;
-				left: -110px;
-				width: 208px;
-				height: 208px;
-				border-radius: 50%;
-				background-color: $graph-blue-dark;
-			}
-			.circle-2{
-				position: absolute;
-				top: 142px;
-				right: 65px;
-				width: 240px;
-				height: 240px;
-				border-radius: 50%;
-				background-color: $graph-blue-dark;
-			}
 		}
 	}
 
@@ -216,24 +184,6 @@
 		height: 233px;
 		top: 0;
 		right: 48px;
-
-		.right-drop{
-			position: absolute;
-			top: 0; right: 0;
-			width: 86px;
-			height: 136px;
-			background-color: #fff;
-			border-radius: 0px 70px 70px 0px;
-		}
-
-		.left-drop{
-			position: absolute;
-			top: 0; left: 0;
-			width: 135px;
-			height: 233px;
-			background-color: #fff;
-			border-radius: 135px 0 0 0;
-		}
 	}
 
 	.mb-cilinder{
@@ -268,8 +218,8 @@
 
 		.inner-circle{
 			position: absolute;
-			right: 94px;
-			bottom: 15px;
+			right: 96px;
+			bottom: 19px;
 			width: 208px;
 			height: 208px;
 			border-radius: 50%;
