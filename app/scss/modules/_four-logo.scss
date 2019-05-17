@@ -41,6 +41,8 @@
 		position: absolute;
 		width: 100%;
 		height: 100%;
+		border-radius: 50%;
+		overflow: hidden;
 	}
 
 	.rotated-wrap{
@@ -50,5 +52,12 @@
 		height: 150%;
 		@include rotate(45deg);
 		left: 42%;
+	}
+
+	.straight-wrap{
+		perspective: 20px;
+		position: absolute;
+		width: 100%;
+		height: 100%;
 	}
 }
