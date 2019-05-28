@@ -12,58 +12,71 @@ block content
 					span.division.right#mouseY ur
 
 				.illus-container
-					.mb-gray-rect.p_layer
-					.mb-rect-bottomright.p_layer
+					.mb-wrap.doublewidth.fourheight.top.left.p_layer
+						.mb-up-circle
 
-					.mb-bottom-stairs.p_layer
-						.steps.step-1
-						.steps.step-2
-						.steps.step-3
-						.steps.step-4
-						.window-dark
+					.mb-wrap.top.left.fourwidth.doubleheight.p_layer
+						.mb-gray-rect
 
-					.mb-stairs.p_layer
-						.steps.step-1
-						.steps.step-2
-						.steps.step-3
-						.steps.step-4
+					.mb-wrap.bottom.right.halfwidth.doubleheight.p_layer
+						.mb-rect-bottomright
 
-					.mb-dune-stairs.p_layer
-						include _modules/svgs/_mb-dune.jade
-						.door
-							.white-stairs
-								.steps.step-1
-								.steps.step-2
-								.steps.step-3
-								.steps.step-4
+					.mb-wrap.right.bottom.doublewidth.halfheight.p_layer
+						.mb-bottom-stairs
+							.steps.step-1
+							.steps.step-2
+							.steps.step-3
+							.steps.step-4
+							.window-dark
 
-					.mb-rect-top-right.p_layer
+					.mb-wrap.top.left.halfwidth.halfheight.p_layer
+						.mb-stairs
+							.steps.step-1
+							.steps.step-2
+							.steps.step-3
+							.steps.step-4
 
-					.mb-drop-white.p_layer
-						include _modules/svgs/_mb-drop-white.jade
+					.mb-wrap.top.right.halfwidth.fullheight.p_layer
+						.mb-dune-stairs
+							include _modules/svgs/_mb-dune.jade
+							.door
+								.white-stairs
+									.steps.step-1
+									.steps.step-2
+									.steps.step-3
+									.steps.step-4
 
-					.mb-rect.p_layer
+					.mb-wrap.top.right.fullwidth.tripleheight.p_layer
+						.mb-rect-top-right
 
-					.mb-square.clip.p_layer
-						.mb-arch
-						.mb-dark-arch
+					.mb-wrap.bottom.left.triplewidth.halfheight.p_layer
+						.mb-drop-white
+							include _modules/svgs/_mb-drop-white.jade
 
-						.mb-wrap.fullwidth.fullheight.bottom.right
-							include _modules/svgs/_mb-wave.jade
+					.mb-wrap.top.right.fourwidth.doubleheight.p_layer
+						.mb-rect
 
-					.mb-cilinder.p_layer
-					.mb-circle-inner.p_layer
+					.mb-wrap.bottom.left.doublewidth.doubleheight.p_layer
+						.mb-square.clip
+							.mb-arch
+							.mb-dark-arch
 
-					.mb-wrap.doublewidth.bottom.right.p_layer
+							.mb-wrap.fullwidth.fullheight.bottom.right
+								include _modules/svgs/_mb-wave.jade
+
+					.mb-wrap.top.right.fullwidth.tripleheight.p_layer
+						.mb-cilinder
+					.mb-wrap.top.right.fourwidth.halfheight.p_layer
+						.mb-circle-inner
+
+					.mb-wrap.fourwidth.halfheight.top.left.p_layer
 						include _modules/svgs/_mb-circle-eclipse.jade
 
-					.mb-wrap.triplewidth.tripleheight.top.right.p_layer
+					.mb-wrap.fullwidth.halfheight.top.right.p_layer
 						.mb-duocircle
 							.inner-rect-red
 
-					.mb-up-circle.p_layer
-
-					.mb-wrap.triplewidth.fullheight.top.right.p_layer
+					.mb-wrap.fourwidth.fourheight.top.right.p_layer
 						.mb-circle-pink
 							.inner-circle
 
