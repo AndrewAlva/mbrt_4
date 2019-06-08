@@ -41,24 +41,27 @@
 
 	.intro-grid{
 		position: relative;
-		z-index: -1;
 	}
 
 	.team-wrap{
 		position: relative;
+		@include flexBasis(934px);
+		@include flexShrink(30);
 		height: 100%;
-		z-index: -1;
 
-		.portrait-container{
+		.portrait-container, .curtain-container{
 			overflow: hidden;
 			z-index: 1;
-			opacity: .9;
 			position: absolute;
 			width: 96.87%;
 			height: 507px;
 			margin: auto;
 			top: 0; bottom: 0;
 			@include transitions-ease(1.8s);
+		}
+
+		.portrait-container{
+			opacity: .9;
 			mix-blend-mode: multiply;
 
 			#intro-portrait{
@@ -73,37 +76,41 @@
 				background-position: center;
 
 				@include transitions-ease(1.8s);
-
-				&:after{
-					content: '';
-					display: block;
-					position: absolute;
-					top: 50%; left: 50%;
-					@include translate(-50%,-50%);
-					width: 105%;
-					height: 105%;
-					background-color: $intro-bg;
-					@include transitions-ease(1.8s);
-					// border: 1px solid red;
-				}
 			}
 
 			&.show{
 				#intro-portrait{
 					transform: translate(-50%,-50%) scale(1);
-
-					&:after{
-						@include translate(-50%,-155%);
-					}
 				}
+				+ .curtain-container:after{
+					@include translate(-50%,-155%);
+				}
+			}
+		}
+
+		.curtain-container{
+			&:after{
+				content: '';
+				display: block;
+				position: absolute;
+				top: 50%; left: 50%;
+				@include translate(-50%,-50%);
+				width: 105%;
+				height: 105%;
+				background-color: $intro-bg;
+				@include transitions-ease(1.8s);
 			}
 		}
 	}
 
 	.thanks-wrap{
-		position: absolute;
+		position: relative;
+		@include flexBasis(310px);
 		height: 100%;
 		text-transform: uppercase;
+		@media (min-width: 1200px){
+			@include flexBasis(400px);
+		}
 
 		.letter-body{
 			position: absolute;
@@ -140,6 +147,12 @@
 			p{
 				position: relative;
 				line-height: 1.4em;
+
+				.p-line{
+					display: block;
+					width: 100%;
+					height: 1.4em;
+				}
 
 				&:not(:last-child){
 					margin-bottom: 20px;
