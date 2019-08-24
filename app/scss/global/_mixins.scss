@@ -1,3 +1,11 @@
+$big-desktop-width: 1200px;
+
+@mixin bigDesktop {
+  @media (min-width: #{$big-desktop-width}) {
+    @content;
+  }
+}
+
 @mixin border-box{
 	-webkit-box-sizing: border-box;
 	-moz-box-sizing: border-box;

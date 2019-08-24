@@ -1,3 +1,35 @@
+// Special containers to augment rotation intensity
+.mb-wrap{
+	position: absolute;
+
+	&.halfwidth{width: 50%;}
+	&.fullwidth{width: 100%;}
+	&.doublewidth{width: 200%;}
+	&.triplewidth{width: 300%;}
+	&.fourwidth{width: 400%;}
+	&.fivewidth{width: 500%;}
+	&.sixwidth{width: 600%;}
+	&.eightwidth{width: 800%;}
+	&.tenwidth{width: 1000%;}
+
+	&.halfheight{height: 50%;}
+	&.fullheight{height: 100%;}
+	&.doubleheight{height: 200%;}
+	&.tripleheight{height: 300%;}
+	&.fourheight{height: 400%;}
+	&.fiveheight{height: 500%;}
+	&.sixheight{height: 600%;}
+	&.eightheight{height: 800%;}
+	&.tenheight{height: 1000%;}
+
+	&.top{top: 0;}
+	&.right{right: 0;}
+	&.bottom{bottom: 0;}
+	&.left{left: 0;}
+}
+
+
+// Landing graphs
 .illus-container{
 	// pointer-events: none;
 	// @include drawShadow(0,0,15px,2px,rgba(0,0,0,.1));
@@ -267,42 +299,65 @@
 			background-color: $graph-blue-light;
 		}
 	}
-
-	
-
-	.mb-wrap{
-		position: absolute;
-
-		&.halfwidth{width: 50%;}
-		&.fullwidth{width: 100%;}
-		&.doublewidth{width: 200%;}
-		&.triplewidth{width: 300%;}
-		&.fourwidth{width: 400%;}
-		&.fivewidth{width: 500%;}
-		&.sixwidth{width: 600%;}
-		&.eightwidth{width: 800%;}
-		&.tenwidth{width: 1000%;}
-
-		&.halfheight{height: 50%;}
-		&.fullheight{height: 100%;}
-		&.doubleheight{height: 200%;}
-		&.tripleheight{height: 300%;}
-		&.fourheight{height: 400%;}
-		&.fiveheight{height: 500%;}
-		&.sixheight{height: 600%;}
-		&.eightheight{height: 800%;}
-		&.tenheight{height: 1000%;}
-
-		&.top{top: 0;}
-		&.right{right: 0;}
-		&.bottom{bottom: 0;}
-		&.left{left: 0;}
-	}
 }
 
 
+// People graphs
+.people-graphs{
+	*:not(.photo){
+		position: absolute;
+		margin: auto;
+	}
 
+	// Ulises
+	.uv-{
+		&pink-rect{
+			width: 320px;
+			height: 420px;
+			background-color: $graph-pink;
 
+			// top: 0; bottom: 0;
+			// left: 0; right: 0;
+		}
+
+		&yellow-circle{
+			width: 160px;
+			height: 160px;
+			border-radius: 50%;
+			background-color: $graph-yellow;
+
+			bottom: 0;
+			left: 0;
+		}
+
+		&blue-pill{
+			width: 24px;
+			height: 88px;
+			background-color: $graph-blue-light;
+
+			bottom: 0;
+			left: 0;
+		}
+
+		&green-pill{
+			width: 131px;
+			height: 61px;
+			background-color: $graph-green;
+
+			bottom: 0;
+			right: 0;
+		}
+
+		&red-square{
+			width: 231px;
+			height: 65px;
+			background-color: $graph-red;
+
+			top: 0;
+			right: 0;
+		}
+	}
+}
 
 
 

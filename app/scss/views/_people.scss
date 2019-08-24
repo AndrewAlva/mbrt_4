@@ -1,0 +1,81 @@
+#people-wrap{
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	padding: 60px 80px 50px;
+	color: $intro-text-color;
+	background-color: $intro-bg;
+	overflow: hidden;
+
+	.inner-wrap{
+		position: relative;
+		width: 100%;
+		height: 100%;
+	}
+
+	.grid-wrap{
+		position: absolute;
+		top: 0; left: 0;
+		width: 100%;
+		height: 100%;
+		padding: 60px 8.33% 60px;
+	}
+
+	.threeD-wrap{
+		position: absolute;
+		width: 100%;
+		height: 100%;
+		top: 0; left: 0;
+		// border: 1px solid orange;
+
+		.photo{
+			width: 360px;
+			height: 360px;
+			position: absolute;
+			margin: auto;
+			top: 0; bottom: 0;
+			left: 0; right: 0;
+
+			@include bigDesktop {
+				width: 540px;
+				height: 540px;
+			}
+
+			img{
+				width: 100%;
+			}
+		}
+	}
+
+	.data-wrap{
+		position: absolute;
+		width: 100%;
+		height: 100%;
+		top: 0;
+		left: -12.2%;
+		mix-blend-mode: multiply;
+		
+		._year{
+			position: absolute;
+			top: 10px;
+		}
+
+		._name{
+			position: absolute;
+			bottom: 0px;
+		}
+
+		h2, h3{
+			font-size: 10.7em;
+			line-height: 1.1em;
+			height: .79em;
+			font-family: 'Founders-R';
+			text-transform: uppercase;
+			letter-spacing: -.02em;
+
+			.mask-container{
+				padding-right: 20px;
+			}
+		}
+	}
+}

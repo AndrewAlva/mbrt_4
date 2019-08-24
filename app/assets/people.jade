@@ -1,0 +1,43 @@
+extends templates/layout.jade
+
+block content
+	//- .tester
+
+	#people-wrap
+		.inner-wrap
+			header.mbrt-head
+				include _modules/_four-logo.jade
+
+		.grid-wrap
+			.inner-wrap
+				.threeD-wrap.people-graphs.perspective-1500
+					.mb-wrap.doublewidth.fourheight.top.left.p_layer
+						.uv-pink-rect
+
+					.photo.p_layer
+						img(src="img/people/ulises.jpg", alt="2014, Ulises Valencia")
+
+					.mb-wrap.doublewidth.sixheight.bottom.left.p_layer
+						.uv-yellow-circle
+
+					.mb-wrap.halfewidth.fourheight.bottom.left.p_layer
+						.uv-blue-pill
+
+					.mb-wrap.doublewidth.fourheight.bottom.right.p_layer
+						.uv-green-pill
+
+					.mb-wrap.doublewidth.fourheight.top.right.p_layer
+						.uv-red-square
+
+				.data-wrap
+					h3._year 
+						span.mask-container
+								span.up-in 014
+
+					._name
+						h2 
+							span.mask-container
+								span.up-in Ulises
+						h2 
+							span.mask-container
+								span.up-in Valencia
