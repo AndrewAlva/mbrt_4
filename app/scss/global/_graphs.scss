@@ -310,14 +310,34 @@
 	}
 
 	// Ulises
+	.pho-red-circle{
+		overflow: hidden;
+		width: 83px;
+		height: 83px;
+		border-radius: 50%;
+		background-color: $graph-red;
+
+		top: 63px;
+		left: -51px;
+
+		&:before{
+			content: '';
+			position: absolute;
+			top: 0;
+			right: 0;
+			width: 32px;
+			height: 100%;
+			background-color: $graph-purple;
+		}
+	}
 	.uv-{
 		&pink-rect{
-			width: 320px;
-			height: 420px;
+			width: 377px;
+			height: 440px;
 			background-color: $graph-pink;
 
-			// top: 0; bottom: 0;
-			// left: 0; right: 0;
+			top: 57px;
+			right: 437px;
 		}
 
 		&yellow-circle{
@@ -326,35 +346,168 @@
 			border-radius: 50%;
 			background-color: $graph-yellow;
 
-			bottom: 0;
-			left: 0;
+			bottom: 141px;
+			right: 133px;
 		}
 
-		&blue-pill{
-			width: 24px;
-			height: 88px;
+		&blue-quartcircle{
+			width: 91px;
+			height: 71px;
+			border-radius: 100% 0% 0% 100% / 0% 100% 0% 100% ;
 			background-color: $graph-blue-light;
 
-			bottom: 0;
-			left: 0;
+			bottom: 385px;
+			left: 235px;
 		}
 
-		&green-pill{
-			width: 131px;
-			height: 61px;
-			background-color: $graph-green;
-
-			bottom: 0;
-			right: 0;
-		}
-
-		&red-square{
-			width: 231px;
-			height: 65px;
+		&red-circle{
+			overflow: hidden;
+			width: 83px;
+			height: 83px;
+			border-radius: 50%;
 			background-color: $graph-red;
 
-			top: 0;
-			right: 0;
+			top: 173px;
+			left: 469px;
+
+			&:before{
+				content: '';
+				position: absolute;
+				top: 0;
+				right: 0;
+				width: 32px;
+				height: 100%;
+				background-color: $graph-purple;
+			}
+		}
+	}
+
+	.mt-{
+		&blue-rect{
+			width: 165px;
+			height: 270px;
+			background-color: $graph-blue-dark;
+
+			top: 110px;
+			left: 476px;
+		}
+
+		&gray-rect{
+			width: 380px;
+			height: 201px;
+			background-color: $graph-gray;
+
+			top: 77px;
+			right: 520px;
+		}
+
+		&blue-circle{
+			width: 62px;
+			height: 62px;
+			border-radius: 50%;
+			background-color: $graph-blue-light;
+
+			bottom: 390px;
+			left: 250px;
+		}
+
+		&pink-circle{
+			width: 147px;
+			height: 147px;
+			border-radius: 50%;
+			background-color: $graph-pink;
+
+			top: 480px;
+			right: 400px;
+		}
+
+		&yellow-polygon{
+			width: 180px;
+			height: 87px;
+
+			bottom: 487px;
+			right: 165px;
+
+			&:before{
+				content: '';
+				position: absolute;
+				top: 0; right: 0;
+				width: 80px;
+				height: 100%;
+				border-top-right-radius: 87px;
+				border-bottom-right-radius: 87px;
+				background-color: $graph-yellow;
+			}
+
+			&:after{
+				content: '';
+				position: absolute;
+				top: 0; 
+				right: 80px;
+				width: 0;
+				border-right: 100px solid $graph-yellow;
+				border-top: 87px solid transparent;
+			}
+		}
+	}
+
+	.lp-{
+		&yellow-rect{
+			width: 380px;
+			height: 440px;
+			background-color: $graph-yellow;
+
+			top: 84px;
+			right: 481px;
+		}
+
+		&green-rect{
+			width: 238px;
+			height: 102px;
+			background-color: $graph-green;
+
+			bottom: 499px;
+			left: 911px;
+		}
+
+		&red-circle{
+			width: 120px;
+			height: 120px;
+			border-radius: 50%;
+			background-color: $graph-red;
+
+			top: 362px;
+			right: 116px;
+		}
+
+		&pink-polygon{
+			width: 156px;
+			height: 165px;
+			background-color: $graph-pink;
+				border-radius: 100% 0% 2% 98% / 100% 100% 0% 0%;
+
+			top: 234px;
+			left: 363px;
+		}
+		
+		&blue-pill{
+			width: 23px;
+			height: 83px;
+			border-radius: 23px;
+			background-color: $graph-blue-dark;
+
+			bottom: 68px;
+			right: 396px;
+		}
+		
+		&lightblue-pill{
+			width: 23px;
+			height: 83px;
+			border-radius: 23px;
+			background-color: $graph-blue-light;
+
+			bottom: 68px;
+			right: 361px;
 		}
 	}
 }

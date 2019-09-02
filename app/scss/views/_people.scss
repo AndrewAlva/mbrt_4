@@ -18,14 +18,15 @@
 		top: 0; left: 0;
 		width: 100%;
 		height: 100%;
-		padding: 60px 8.33% 60px;
+		padding: 60px 8.33% 55px;
 	}
 
 	.threeD-wrap{
 		position: absolute;
-		width: 100%;
-		height: 100%;
-		top: 0; left: 0;
+		width: 1600px;
+		height: 780px;
+		top: 50%; left: 50%;
+		@include translate(-50%, -50%);
 		// border: 1px solid orange;
 
 		.photo{
@@ -37,8 +38,8 @@
 			left: 0; right: 0;
 
 			@include bigDesktop {
-				width: 540px;
-				height: 540px;
+				width: 560px;
+				height: 560px;
 			}
 
 			img{
@@ -48,11 +49,12 @@
 	}
 
 	.data-wrap{
+			pointer-events: none;
 		position: absolute;
 		width: 100%;
 		height: 100%;
 		top: 0;
-		left: -12.2%;
+		left: -8.5%;
 		mix-blend-mode: multiply;
 		
 		._year{
@@ -62,13 +64,13 @@
 
 		._name{
 			position: absolute;
-			bottom: 0px;
+			bottom: 0;
 		}
 
 		h2, h3{
-			font-size: 10.7em;
+			font-size: 10em;
 			line-height: 1.1em;
-			height: .79em;
+			height: .72em;
 			font-family: 'Founders-R';
 			text-transform: uppercase;
 			letter-spacing: -.02em;
