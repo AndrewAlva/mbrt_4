@@ -577,6 +577,83 @@
 			left: 1301px;
 		}
 	}
+
+	.ach-{
+		&yellow-rect{
+			width: 240px;
+			height: 333px;
+			background-color: $graph-yellow;
+
+			top: 68px;
+			right: 866px;
+		}
+		
+		&pink-circle{
+			width: 128px;
+			height: 128px;
+			border-radius: 50%;
+			background-color: $graph-pink;
+			overflow: hidden;
+
+			bottom: 546px;
+			left: 1173px;
+
+			.blue-half{
+				position: absolute;
+				bottom: 0;
+				width: 100%;
+				height: 50%;
+				background-color: $graph-blue-light;
+			}
+		}
+		
+		&pink-pill{
+			width: 98px;
+			height: 40px;
+			border-radius: 45% 45%;
+			background-color: $graph-pink;
+			overflow: hidden;
+
+			bottom: 384px;
+			right: 471px;
+
+			.purple-half{
+				position: absolute;
+				width: 50%;
+				height: 100%;
+				background-color: $graph-purple;
+			}
+		}
+		
+		&blue-rect{
+			width: 140px;
+			height: 60px;
+			background-color: $graph-blue-dark;
+			overflow: hidden;
+
+			top: 366px;
+			left: 236px;
+
+			.inner-red{
+				position: absolute;
+				right: 0;
+				width: 97px;
+				height: 100%;
+				background-color: $graph-red;
+			}
+
+			.inner-gray{
+				position: absolute;
+				top: 50%;
+				left: 76px;
+				@include translate(0, -48%);
+				width: 300px;
+				height: 300px;
+				border-radius: 50%;
+				background-color: $graph-gray;
+			}
+		}
+	}
 }
 
 
