@@ -480,10 +480,10 @@
 			right: 116px;
 		}
 
-		&pink-polygon{
+		&blue-polygon{
 			width: 156px;
 			height: 165px;
-			background-color: $graph-pink;
+			background-color: $graph-blue-light;
 				border-radius: 100% 0% 2% 98% / 100% 100% 0% 0%;
 
 			top: 234px;
@@ -508,6 +508,73 @@
 
 			bottom: 68px;
 			right: 361px;
+		}
+	}
+
+	.jf-{
+		&gray-rect{
+			width: 140px;
+			height: 200px;
+			background-color: $graph-gray;
+
+			top: 370px;
+			right: 980px;
+		}
+
+		&red-rect{
+			width: 280px;
+			height: 280px;
+			background-color: $graph-red;
+			
+			top: 90px;
+			left: 443px;
+		}
+
+		&pink-semicircle{
+			width: 102px;
+			height: 80px;
+
+			bottom: 497px;
+			left: 238px;
+			overflow: hidden;
+
+			.inner{
+				width: 164px;
+				height: 164px;
+				border-radius: 50%;
+				background-color: $graph-pink;
+			}
+		}
+
+		&yellow-rect{
+			width: 165px;
+			height: 84px;
+			background-color: $graph-yellow;
+
+			bottom: 170px;
+			right: 421px;
+			overflow: hidden;
+
+			.jf-blue-circle{
+				width: 239%;
+				height: 450%;
+				background-color: $graph-blue-light;
+				
+				bottom: 0;
+				left: 0;
+				border-radius: 50%;
+				@include translate(-60%, 0);
+			}
+		}
+
+		&gray-moon{
+			width: 128px;
+			height: 128px;
+			background-color: $graph-gray;
+			border-radius: 50%;
+
+			top: 305px;
+			left: 1301px;
 		}
 	}
 }
