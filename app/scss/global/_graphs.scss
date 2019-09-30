@@ -714,6 +714,55 @@
 			}
 		}
 	}
+
+	.gp-{
+		&green-pill{
+			width: 140px;
+			height: 39px;
+			background-color: $graph-green;
+			border-radius: 40px;
+
+			bottom: 561px;
+			left: 418px;
+		}
+
+		&blue-rect{
+			width: 400px;
+			height: 400px;
+			background-color: $graph-blue-light;
+
+			top: 291px;
+			right: 781px;
+		}
+
+		&pink-rect{
+			width: 240px;
+			height: 200px;
+			background-color: $graph-pink;
+
+			bottom: 262px;
+			left: 899px;
+		}
+
+		&yellow-circle{
+			width: 113px;
+			height: 113px;
+			background-color: $graph-yellow;
+			border-radius: 50%;
+
+			bottom: 205px;
+			right: 203px;
+		}
+
+		&blue-eye{
+			width: 139px;
+			height: 88px;
+			background-color: $graph-blue-light;
+
+			top: 180px;
+			left: 1038px;
+		}
+	}
 }
 
 
