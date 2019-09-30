@@ -763,6 +763,69 @@
 			left: 1038px;
 		}
 	}
+
+	.ca-{
+		&pink-rect{
+			width: 379px;
+			height: 538px;
+			background-color: $graph-pink;
+
+			left: 742px;
+			bottom: 165px;
+		}
+
+		&red-circle{
+			width: 84px;
+			height: 84px;
+			background-color: $graph-red;
+			border-radius: 50%;
+
+			top: 152px;
+			right: 292px;
+		}
+
+		&green-rect{
+			width: 240px;
+			height: 172px;
+			background-color: $graph-green;
+
+			left: 934px;
+			bottom: 250px;
+		}
+
+		&yellow-circle{
+			width: 180px;
+			height: 180px;
+			background-color: $graph-yellow;
+			border-radius: 50%;
+
+			bottom: 393px;
+			right: 1042px;
+		}
+
+		&play-pills{
+			width: 66px;
+			height: 94px;
+
+			top: 633px;
+			left: 962px;
+
+			.blue, .gray{
+				position: absolute;
+				width: 26px;
+				height: 100%;
+				border-radius: 14px 14px 14px 14px / 20px 20px 20px 20px;
+			}
+
+			.blue{
+				background-color: $graph-blue-dark;
+			}
+			.gray{
+				background-color: $graph-gray;
+				right: 0;
+			}
+		}
+	}
 }
 
 
