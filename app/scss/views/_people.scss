@@ -77,7 +77,15 @@
 
 			.mask-container{
 				padding-right: 20px;
+				width: 100%;
 			}
+		}
+
+		.sup{
+			position: absolute;
+			top: 0;
+			font-size: 6rem;
+			line-height: 1.25em;
 		}
 	}
 }

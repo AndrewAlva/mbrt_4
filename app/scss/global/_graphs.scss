@@ -654,6 +654,66 @@
 			}
 		}
 	}
+
+	.r3-{
+		&blue-shape{
+			width: 172px;
+			height: 126px;
+			background-color: $graph-blue-light;
+			border-top-left-radius: 100%;
+
+			bottom: 402px;
+			left: 374px;
+		}
+
+		&pink-rect{
+			width: 240px;
+			height: 200px;
+			background-color: $graph-pink;
+
+			top: 517px;
+			right: 495px;
+		}
+
+		&red-rect{
+			width: 400px;
+			height: 400px;
+			background-color: $graph-red;
+
+			bottom: 221px;
+			left: 762px;
+		}
+
+		&yellow-circle{
+			width: 90px;
+			height: 90px;
+			background-color: $graph-yellow;
+			border-radius: 50%;
+
+			bottom: 489px;
+			right: 475px;
+		}
+
+		&gray-circle{
+			width: 110px;
+			height: 110px;
+			background-color: $graph-gray;
+			border-radius: 50%;
+
+			top: 492px;
+			left: 1267px;
+
+			.inner-green{
+				position: absolute;
+				margin: auto;
+				top: 0; bottom: 0; left: 0; right: 0;
+				width: 60px;
+				height: 60px;
+				border-radius: 50%;
+				background-color: $graph-green;
+			}
+		}
+	}
 }
 
 
