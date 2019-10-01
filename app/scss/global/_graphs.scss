@@ -851,10 +851,10 @@
 			height: 113px;
 			background-color: $graph-green;
 			// border-radius: 28px 28px 28px 28px / 45px 45px 45px 45px;
-			border-top-left-radius: 24px 40px;
-			border-top-right-radius: 24px 40px;
-			border-bottom-left-radius: 24px 40px;
-			border-bottom-right-radius: 24px 40px;
+			border-top-left-radius: 28px 42px;
+			border-top-right-radius: 28px 42px;
+			border-bottom-left-radius: 28px 42px;
+			border-bottom-right-radius: 28px 42px;
 
 			bottom: 307px;
 			left: 358px;
@@ -887,6 +887,56 @@
 				height: 50%;
 				background-color: $graph-blue-light;
 			}
+		}
+	}
+
+	.ma-{
+		&gray-rect{
+			width: 351px;
+			height: 444px;
+			background-color: $graph-gray;
+
+			bottom: 257px;
+			left: 463px;
+		}
+
+		&blue-rect{
+			width: 224px;
+			height: 252px;
+			background-color: $graph-blue-light;
+
+			top: 387px;
+			right: 466px;
+		}
+
+		&red-circle{
+			width: 61px;
+			height: 61px;
+			background-color: $graph-red;
+			border-radius: 50%;
+
+			right: 1230px;
+			bottom: 305px;
+		}
+
+		&pink-shape{
+			width: 142px;
+			height: 126px;
+			background-color: $graph-pink;
+			border-bottom-right-radius: 100%;
+
+			top: 238px;
+			left: 418px;
+		}
+
+		&yellow-circle{
+			width: 126px;
+			height: 126px;
+			background-color: $graph-yellow;
+			border-radius: 50%;
+
+			left: 1225px;
+			bottom: 459px;
 		}
 	}
 }
