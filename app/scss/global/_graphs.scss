@@ -939,6 +939,69 @@
 			bottom: 459px;
 		}
 	}
+
+	.agg-{
+		&pink-rect{
+			width: 380px;
+			height: 440px;
+			background-color: $graph-pink;
+
+			left: 739px;
+			bottom: 258px;
+		}
+
+		&green-rect{
+			width: 238px;
+			height: 102px;
+			background-color: $graph-green;
+
+			right: 451px;
+			top: 173px;
+		}
+
+		&blue-shape{
+			width: 155px;
+			height: 165px;
+			background-color: $graph-blue-light;
+			border-top-left-radius: 100%;
+
+			right: 1080px;
+			bottom: 301px;
+		}
+
+		&play-pills{
+			width: 59px;
+			height: 83px;
+
+			top: 553px;
+			left: 1197px;
+
+			.blue, .dark-blue{
+				position: absolute;
+				width: 24px;
+				height: 100%;
+				border-radius: 12px 12px 12px 12px / 16px 16px 16px 16px;
+			}
+
+			.blue{
+				background-color: $graph-blue-light;
+				right: 0;
+			}
+			.dark-blue{
+				background-color: $graph-blue-dark;
+			}
+		}
+
+		&red-circle{
+			width: 120px;
+			height: 120px;
+			background-color: $graph-red;
+			border-radius: 50%;
+
+			bottom: 345px;
+			left: 1285px;
+		}
+	}
 }
 
 
