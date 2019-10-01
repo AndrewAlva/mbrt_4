@@ -1002,6 +1002,85 @@
 			left: 1285px;
 		}
 	}
+
+	.av-{
+		&gray-rect{
+			width: 400px;
+			height: 230px;
+			background-color: $graph-gray;
+
+			left: 699px;
+			bottom: 57px;
+		}
+
+		&yellow-rect{
+			width: 240px;
+			height: 333px;
+			background-color: $graph-yellow;
+
+			bottom: 353px;
+			right: 907px;
+		}
+
+		&pink-circle{
+			width: 128px;
+			height: 128px;
+			overflow: hidden;
+			background-color: $graph-pink;
+			border-radius: 50%;
+			@include rotate(45deg);
+			
+			top: 191px;
+			left: 1247px;
+
+			.blue-half{
+				position: absolute;
+				bottom: 0;
+				width: 100%;
+				height: 50%;
+				background-color: $graph-blue-light;
+			}
+		}
+
+		&pink-rect{
+			width: 126px;
+			height: 46px;
+			overflow: hidden;
+			background-color: $graph-pink;
+
+			bottom: 425px;
+			left: 233px;
+
+			.green{
+				position: absolute;
+				bottom: 0; left: 0;
+				background-color: $graph-green;
+				width: 51px;
+				height: 200%;
+				@include transform-origin(bottom, right);
+				@include rotate(-7deg);
+			}
+		}
+
+		&gray-pill{
+			width: 98px;
+			height: 40px;
+			overflow: hidden;
+			background-color: $graph-gray;
+			border-radius: 30px 30px 30px 30px / 20px 20px 20px 20px;
+
+			top: 356px;
+			right: 472px;
+
+			.dark-half{
+				position: absolute;
+				left: 0;
+				width: 50%;
+				height: 100%;
+				background-color: $graph-purple;
+			}
+		}
+	}
 }
 
 
