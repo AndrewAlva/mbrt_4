@@ -1070,7 +1070,7 @@
 			border-radius: 30px 30px 30px 30px / 20px 20px 20px 20px;
 
 			top: 356px;
-			right: 472px;
+			right: 471px;
 
 			.dark-half{
 				position: absolute;
@@ -1079,6 +1079,65 @@
 				height: 100%;
 				background-color: $graph-purple;
 			}
+		}
+	}
+
+	.mds-{
+		&gray-rect{
+			width: 80px;
+			height: 140px;
+			background-color: $graph-gray;
+
+			bottom: 141px;
+			left: 1028px;
+		}
+
+		&pink-rect{
+			width: 377px;
+			height: 440px;
+			background-color: $graph-pink;
+
+			bottom: 281px;
+			right: 439px;
+		}
+
+		&gray-circle{
+			width: 83px;
+			height: 83px;
+			overflow: hidden;
+			background-color: $graph-gray;
+			border-radius: 50%;
+
+			top: 173px;
+			left: 469px;
+
+			.blue-half{
+				position: absolute;
+				right: 0;
+				width: 32px;
+				height: 100%;
+				background-color: $graph-blue-dark;
+			}
+		}
+
+		&yellow-circle{
+			width: 91px;
+			height: 71px;
+			background-color: $graph-yellow;
+			border-bottom-left-radius: 100%;
+
+			bottom: 362px;
+			left: 326px;
+		}
+
+		&blue-circle{
+			width: 160px;
+			height: 160px;
+			background-color: $graph-blue-light;
+			border-radius: 50%;
+
+			top: 418px;
+			right: 134px;
 		}
 	}
 }
