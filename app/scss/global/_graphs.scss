@@ -1190,6 +1190,69 @@
 			right: 1262px;
 		}
 	}
+
+	.sm-{
+		&gray-rect{
+			width: 184px;
+			height: 304px;
+			background-color: $graph-gray;
+
+			bottom: 197px;
+			left: 970px;
+		}
+
+		&yellow-rect{
+			width: 379px;
+			height: 336px;
+			background-color: $graph-yellow;
+
+			bottom: 360px;
+			right: 770px;
+		}
+
+		&green-pill{
+			width: 55px;
+			height: 113px;
+			background-color: $graph-green;
+
+			border-top-left-radius: 28px 42px;
+			border-top-right-radius: 28px 42px;
+			border-bottom-left-radius: 28px 42px;
+			border-bottom-right-radius: 28px 42px;
+
+			top: 359px;
+			left: 357px;
+		}
+
+		&pink-circle{
+			width: 101px;
+			height: 101px;
+			overflow: hidden;
+			background-color: $graph-pink;
+			border-radius: 50%;
+
+			left: 1028px;
+			bottom: 258px;
+
+			.half{
+				position: absolute;
+				bottom: 0;
+				width: 100%;
+				height: 50%;
+				background-color: $graph-blue-light;
+			}
+		}
+
+		&red-circle{
+			width: 60px;
+			height: 60px;
+			background-color: $graph-red;
+			border-radius: 50%;
+
+			top: 150px;
+			right: 369px;
+		}
+	}
 }
 
 
