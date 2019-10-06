@@ -1347,8 +1347,8 @@
 
 		&pink-shape{
 			@include drawCircle($graph-pink, 180px, 180px);
-			top: getTop(270px);
 			right: getX(1202px);
+			top: getTop(270px);
 		}
 	}
 
@@ -1406,6 +1406,72 @@
 			right: getX(1240px);
 			top: getTop(297px);
 			border-top-left-radius: 100%;
+		}
+	}
+
+	.kn-{
+		// @include drawRect($graph-blue-dark, 84px, 84px);
+		&yellow-rect{
+			@include drawRect($graph-yellow, 240px, 416px);
+			left: getX(647px);
+			bottom: getBottom(358px);
+		}
+
+		&gray-rect{
+			@include drawRect($graph-gray, 400px, 230px);
+			right: getX(663px);
+			bottom: getBottom(115px);
+		}
+
+		&blue-rect{
+			@include drawRect($graph-blue-light, 124px, 46px);
+			left: getX(394px);
+			top: getTop(372px);
+			overflow: hidden;
+
+			.inner-blue{
+				position: absolute;
+				bottom: 0;
+				left: 0;
+				width: 50px;
+				height: 200%;
+				@include rotate(-6.5deg);
+				@include transform-origin(bottom, right);
+				background-color: $graph-blue-dark;
+			}
+		}
+
+		&pink-circle{
+			@include drawCircle($graph-pink, 128px, 128px);
+			left: getX(1407px);
+			bottom: getBottom(517px);
+			overflow: hidden;
+
+			.green-half{
+				position: absolute;
+				bottom: 0;
+				width: 100%;
+				height: 50%;
+				background-color: $graph-green;
+				@include rotate(-30deg);
+				@include transform-origin(top, center);
+			}
+		}
+
+		&blue-pill{
+			@include drawRect($graph-pink, 122px, 54px);
+			right: getX(629px);
+			top: getTop(414px);
+			border-radius: 50% 50% 50% 50% / 32px 32px 32px 32px;
+			overflow: hidden;
+
+			.pink-half{
+				position: absolute;
+				left: 0;
+				width: 71px;
+				height: 100%;
+				background-color: $graph-blue-dark-bright;
+			}
 		}
 
 	}
