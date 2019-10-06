@@ -1253,6 +1253,56 @@
 			right: 369px;
 		}
 	}
+
+	.sg-{
+		&gray-rect{
+			@include drawRect($graph-gray, 140px, 200px);
+			left: 478px;
+			bottom: 211px;
+		}
+
+		&red-rect{
+			@include drawRect($graph-red, 280px, 280px);
+
+			bottom: 411px;
+			right: 878px;
+		}
+
+		&yellow-rect{
+			@include drawRect($graph-yellow, 165px, 84px);
+			overflow: hidden;
+
+			top: 527px;
+			left: 1013px;
+
+			.inner-blue{
+				@include drawCircle($graph-blue-light, 280px, 280px);
+				bottom: 2px;
+				left: -140px;
+			}
+		}
+
+		&pink-semicircle{
+			@include drawRect(transparent, 102px, 80px);
+			bottom: 496px;
+			// left: 237px;
+			left: getX(397px);
+			overflow: hidden;
+
+			.real-circle{
+				@include drawCircle($graph-pink, 168px, 160px);
+				top: 0;
+				left: 0;
+			}
+		}
+
+		&pink-shape{
+			@include drawCircle($graph-pink, 128px, 128px);
+			top: getTop(367px);
+			right: getX(330px);
+		}
+
+	}
 }
 
 

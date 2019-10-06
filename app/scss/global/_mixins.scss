@@ -193,3 +193,32 @@ $big-desktop-width: 1200px;
 	flex-shrink: $ratio;
 }
 
+
+// Graphs mixins
+@mixin drawRect($color: $graph-red, $width: 50px, $height: 50px){
+	background-color: $color;
+	width: $width;
+	height: $height;
+}
+
+@mixin drawCircle($color: $graph-red, $width: 50px, $height: 50px){
+	background-color: $color;
+	width: $width;
+	height: $height;
+	border-radius: 50%;
+}
+
+@function getX($value){
+	@return $value  - 160;
+}
+@function getTop($value){
+	@return $value  - 63;
+}
+@function getBottom($value){
+	@return $value  - 57;
+}
+
+
+
+
+
