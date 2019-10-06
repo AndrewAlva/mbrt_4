@@ -1350,6 +1350,63 @@
 			top: getTop(270px);
 			right: getX(1202px);
 		}
+	}
+
+	.rh-{
+		&yellow-circle{
+			@include drawCircle($graph-yellow, 155px, 155px);
+			left: getX(1429px);
+			bottom: getBottom(352px);
+
+			.inner-blue{
+				position: absolute;
+				margin: auto;
+				top: 0; bottom: 0;
+				left: 0; right: 0;
+				@include drawCircle($graph-blue-dark, 84px, 84px);
+			}
+		}
+
+		&blue-rect{
+			@include drawRect($graph-blue-dark, 380px, 440px);
+			right: getX(657px);
+			bottom: getBottom(338px);
+		}
+
+		&lightblue-rect{
+			@include drawRect($graph-blue-light, 81px, 154px);
+			left: getX(1215px);
+			top: getTop(239px);
+		}
+
+		&play-pills{
+			@include drawRect(transparent, 59px, 83px);
+			left: getX(1340px);
+			bottom: getBottom(128px);
+
+			.dark, .light{
+				position: absolute;
+				width: 24px;
+				height: 100%;
+				border-radius: 12px 12px 12px 12px / 15px 15px 15px 15px;
+			}
+
+			.dark{
+				background-color: $graph-blue-dark;
+			}
+
+			.light{
+				right: 0;
+				background-color: $graph-blue-light;
+			}
+		}
+
+		&blue-shape{
+			@include drawRect($graph-blue-light, 156px, 165px);
+			right: getX(1240px);
+			top: getTop(297px);
+			border-top-left-radius: 100%;
+		}
 
 	}
 }
