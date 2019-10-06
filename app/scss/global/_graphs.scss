@@ -1303,6 +1303,55 @@
 		}
 
 	}
+
+	.kp-{
+		&gray-rect{
+			@include drawRect($graph-gray, 379px, 538px);
+			bottom: getBottom(240px);
+			left: getX(903px);
+		}
+
+		&blue-rect{
+			@include drawRect($graph-blue-dark, 240px, 172px);
+			bottom: getBottom(272px);
+			right: getX(616px);
+		}
+
+		&yellow-circle{
+			@include drawCircle($graph-yellow, 100px, 100px);
+			top: getTop(207px);
+			left: getX(1376px);
+		}
+
+		&play-pills{
+			@include drawRect(transparent, 63px, 90px);
+			bottom: getBottom(125px);
+			left: getX(1092px);
+
+			.yellow, .blue{
+				position: absolute;
+				width: 25px;
+				height: 100%;
+				border-radius: 14px 14px 14px 14px / 18px 18px 18px 18px;
+			}
+
+			.yellow{
+				background-color: $graph-yellow;
+			}
+
+			.blue{
+				right: 0;
+				background-color: $graph-blue-light;
+			}
+		}
+
+		&pink-shape{
+			@include drawCircle($graph-pink, 180px, 180px);
+			top: getTop(270px);
+			right: getX(1202px);
+		}
+
+	}
 }
 
 
