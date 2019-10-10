@@ -1545,7 +1545,39 @@
 			right: getX(1448px);
 			top: getTop(388px);
 		}
+	}
 
+	.rn-{
+		&pink-rect{
+			@include drawRect($graph-pink, 240px, 200px);
+			left: getX(1059px);
+			bottom: getBottom(320px);
+		}
+
+		&blue-rect{
+			@include drawRect($graph-blue-light, 400px, 400px);
+			right: getX(942px);
+			bottom: getBottom(145px);
+		}
+
+		&green-pill{
+			@include drawRect($graph-green, 140px, 39px);
+			left: getX(578px);
+			top: getTop(243px);
+			border-radius: 25px 25px 25px 25px / 19px 19px 19px 19px;
+		}
+
+		&blue-eye{
+			@include drawCircle($graph-blue-light, 139px, 88px);
+			left: getX(1198px);
+			bottom: getBottom(569px);
+		}
+
+		&yellow-circle{
+			@include drawCircle($graph-yellow, 113px, 113px);
+			right: getX(363px);
+			top: getTop(524px);
+		}
 	}
 }
 
