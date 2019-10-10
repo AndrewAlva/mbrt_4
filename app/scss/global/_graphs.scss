@@ -1513,6 +1513,38 @@
 			top: getTop(365px);
 			border-top-left-radius: 100%
 		}
+	}
+
+	.zp-{
+		&gray-rect{
+			@include drawRect($graph-gray, 380px, 201px);
+			left: getX(860px);
+			bottom: getBottom(562px);
+		}
+
+		&blue-rect{
+			@include drawRect($graph-blue-dark, 165px, 267px);
+			right: getX(1119px);
+			bottom: getBottom(460px);
+		}
+
+		&yellow-shape{
+			@include drawRect($graph-yellow, 180px, 87px);
+			left: getX(1415px);
+			top: getTop(266px);
+		}
+
+		&pink-circle{
+			@include drawCircle($graph-pink, 147px, 147px);
+			left: getX(1211px);
+			bottom: getBottom(204px);
+		}
+
+		&blue-circle{
+			@include drawCircle($graph-blue-light, 62px, 62px);
+			right: getX(1448px);
+			top: getTop(388px);
+		}
 
 	}
 }
