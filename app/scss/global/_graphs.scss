@@ -1410,7 +1410,6 @@
 	}
 
 	.kn-{
-		// @include drawRect($graph-blue-dark, 84px, 84px);
 		&yellow-rect{
 			@include drawRect($graph-yellow, 240px, 416px);
 			left: getX(647px);
@@ -1472,6 +1471,47 @@
 				height: 100%;
 				background-color: $graph-blue-dark-bright;
 			}
+		}
+	}
+
+	.edlc-{
+		&pink-rect{
+			@include drawRect($graph-pink, 240px, 200px);
+			left: getX(1024px);
+			bottom: getBottom(120px);
+		}
+
+		&red-rect{
+			@include drawRect($graph-red, 400px, 400px);
+			right: getX(601px);
+			bottom: getBottom(278px);
+		}
+
+		&yellow-circle{
+			@include drawCircle($graph-yellow, 90px, 90px);
+			left: getX(1195px);
+			top: getTop(264px);
+		}
+
+		&gray-circle{
+			@include drawCircle($graph-gray, 110px, 110px);
+			left: getX(1427px);
+			bottom: getBottom(235px);
+
+			.inner-green{
+				position: absolute;
+				margin: auto;
+				top: 0; bottom: 0;
+				left: 0; right: 0;
+				@include drawCircle($graph-green, 60px, 60px);
+			}
+		}
+
+		&blue-shape{
+			@include drawRect($graph-blue-light, 172px, 126px);
+			right: getX(1200px);
+			top: getTop(365px);
+			border-top-left-radius: 100%
 		}
 
 	}
