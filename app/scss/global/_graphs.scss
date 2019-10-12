@@ -340,6 +340,12 @@
 			right: 437px;
 		}
 
+		&gray-rect{
+			@include drawRect($graph-gray, 80px, 140px);
+			left: getX(1190px);
+			bottom: getBottom(200px);
+		}
+
 		&yellow-circle{
 			width: 160px;
 			height: 160px;
@@ -448,6 +454,8 @@
 				border-right: 100px solid $graph-yellow;
 				border-top: 87px solid transparent;
 			}
+
+			// svg{width: 100%;}
 		}
 	}
 
@@ -483,11 +491,13 @@
 		&blue-polygon{
 			width: 156px;
 			height: 165px;
-			background-color: $graph-blue-light;
-				border-radius: 100% 0% 2% 98% / 100% 100% 0% 0%;
+			// background-color: $graph-blue-light;
+			// 	border-radius: 100% 0% 2% 98% / 100% 100% 0% 0%;
 
 			top: 234px;
 			left: 363px;
+
+			svg{width: 100%;}
 		}
 		
 		&blue-pill{
@@ -570,11 +580,16 @@
 		&gray-moon{
 			width: 128px;
 			height: 128px;
-			background-color: $graph-gray;
+			// background-color: $graph-gray;
 			border-radius: 50%;
 
 			top: 305px;
 			left: 1301px;
+
+			svg{
+				width: 100%;
+				@include rotate(120deg);
+			}
 		}
 	}
 
@@ -659,11 +674,13 @@
 		&blue-shape{
 			width: 172px;
 			height: 126px;
-			background-color: $graph-blue-light;
-			border-top-left-radius: 100%;
+			// background-color: $graph-blue-light;
+			// border-top-left-radius: 100%;
 
 			bottom: 402px;
 			left: 374px;
+
+			svg{width: 100%;}
 		}
 
 		&pink-rect{
@@ -757,10 +774,12 @@
 		&blue-eye{
 			width: 139px;
 			height: 88px;
-			background-color: $graph-blue-light;
+			// background-color: $graph-blue-light;
 
 			top: 180px;
 			left: 1038px;
+
+			svg{width: 100%;}
 		}
 	}
 
@@ -796,11 +815,13 @@
 		&yellow-circle{
 			width: 180px;
 			height: 180px;
-			background-color: $graph-yellow;
+			// background-color: $graph-yellow;
 			border-radius: 50%;
 
 			bottom: 393px;
 			right: 1042px;
+
+			svg{width: 100%;}
 		}
 
 		&play-pills{
@@ -849,7 +870,7 @@
 		&green-pill{
 			width: 55px;
 			height: 113px;
-			background-color: $graph-green;
+			// background-color: $graph-green;
 			// border-radius: 28px 28px 28px 28px / 45px 45px 45px 45px;
 			border-top-left-radius: 28px 42px;
 			border-top-right-radius: 28px 42px;
@@ -858,6 +879,8 @@
 
 			bottom: 307px;
 			left: 358px;
+
+			svg{width: 100%;}
 		}
 
 		&red-circle{
@@ -922,11 +945,13 @@
 		&pink-shape{
 			width: 142px;
 			height: 126px;
-			background-color: $graph-pink;
+			// background-color: $graph-pink;
 			border-bottom-right-radius: 100%;
 
 			top: 238px;
 			left: 418px;
+
+			svg{width: 100%;}
 		}
 
 		&yellow-circle{
@@ -962,11 +987,13 @@
 		&blue-shape{
 			width: 155px;
 			height: 165px;
-			background-color: $graph-blue-light;
-			border-top-left-radius: 100%;
+			// background-color: $graph-blue-light;
+			// border-top-left-radius: 100%;
 
 			right: 1080px;
 			bottom: 301px;
+
+			svg{width: 100%;}
 		}
 
 		&play-pills{
@@ -1163,11 +1190,13 @@
 		&pink-shape{
 			width: 142px;
 			height: 126px;
-			background-color: $graph-pink;
+			// background-color: $graph-pink;
 			border-bottom-right-radius: 100%;
 
 			top: 238px;
 			left: 418px;
+
+			svg{width: 100%;}
 		}
 
 		&yellow-circle{
@@ -1213,7 +1242,7 @@
 		&green-pill{
 			width: 55px;
 			height: 113px;
-			background-color: $graph-green;
+			// background-color: $graph-green;
 
 			border-top-left-radius: 28px 42px;
 			border-top-right-radius: 28px 42px;
@@ -1222,6 +1251,8 @@
 
 			top: 359px;
 			left: 357px;
+
+			svg{width: 100%;}
 		}
 
 		&pink-circle{
@@ -1297,11 +1328,15 @@
 		}
 
 		&pink-shape{
-			@include drawCircle($graph-pink, 128px, 128px);
+			@include drawCircle(transparent, 128px, 128px);
 			top: getTop(367px);
 			right: getX(330px);
-		}
 
+			svg{
+				width: 100%;
+				@include rotate(120deg);
+			}
+		}
 	}
 
 	.kp-{
@@ -1346,9 +1381,11 @@
 		}
 
 		&pink-shape{
-			@include drawCircle($graph-pink, 180px, 180px);
+			@include drawCircle(transparent, 180px, 180px);
 			right: getX(1202px);
 			top: getTop(270px);
+
+			svg{width: 100%;}
 		}
 	}
 
@@ -1402,10 +1439,11 @@
 		}
 
 		&blue-shape{
-			@include drawRect($graph-blue-light, 156px, 165px);
+			@include drawRect(transparent, 156px, 165px);
 			right: getX(1240px);
 			top: getTop(297px);
-			border-top-left-radius: 100%;
+
+			svg{width: 100%;}
 		}
 	}
 
@@ -1487,6 +1525,15 @@
 			bottom: getBottom(278px);
 		}
 
+		&blue-shape{
+			@include drawRect(transparent, 172px, 126px);
+			right: getX(1200px);
+			top: getTop(365px);
+			// border-top-left-radius: 100%;
+
+			svg{width: 100%;}
+		}
+
 		&yellow-circle{
 			@include drawCircle($graph-yellow, 90px, 90px);
 			left: getX(1195px);
@@ -1506,13 +1553,6 @@
 				@include drawCircle($graph-green, 60px, 60px);
 			}
 		}
-
-		&blue-shape{
-			@include drawRect($graph-blue-light, 172px, 126px);
-			right: getX(1200px);
-			top: getTop(365px);
-			border-top-left-radius: 100%
-		}
 	}
 
 	.zp-{
@@ -1529,15 +1569,40 @@
 		}
 
 		&yellow-shape{
-			@include drawRect($graph-yellow, 180px, 87px);
+			@include drawRect(transparent, 180px, 87px);
 			left: getX(1415px);
 			top: getTop(266px);
+
+			&:before{
+				content: '';
+				position: absolute;
+				top: 0; right: 0;
+				width: 80px;
+				height: 100%;
+				border-top-right-radius: 87px;
+				border-bottom-right-radius: 87px;
+				background-color: $graph-yellow;
+			}
+
+			&:after{
+				content: '';
+				position: absolute;
+				top: 0; 
+				right: 80px;
+				width: 0;
+				border-right: 100px solid $graph-yellow;
+				border-top: 87px solid transparent;
+			}
+
+			// svg{width: 100%;}
 		}
 
 		&pink-circle{
-			@include drawCircle($graph-pink, 147px, 147px);
+			@include drawCircle(transparent, 147px, 147px);
 			left: getX(1211px);
 			bottom: getBottom(204px);
+
+			svg{width: 100%;}
 		}
 
 		&blue-circle{
@@ -1568,9 +1633,11 @@
 		}
 
 		&blue-eye{
-			@include drawCircle($graph-blue-light, 139px, 88px);
+			@include drawCircle(transparent, 139px, 88px);
 			left: getX(1198px);
 			bottom: getBottom(569px);
+
+			svg{width: 100%;}
 		}
 
 		&yellow-circle{

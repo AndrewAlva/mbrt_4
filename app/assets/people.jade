@@ -1,4 +1,5 @@
 extends templates/layout.jade
+include _modules/svgs/_peoplegraphs-mixins.jade
 
 block content
 	//- .tester
@@ -13,21 +14,24 @@ block content
 				.threeD-wrap.people-graphs.perspective-1500
 					//- 014
 					//- ULISES VALENCIA
-					//- .mb-wrap.doublewidth.sixheight.top.right.p_layer
-					//- 	.uv-pink-rect
+					.mb-wrap.doublewidth.sixheight.top.right.p_layer
+						.uv-pink-rect
 
-					//- .photo.p_layer
-					//- 	img(src="img/people/01_Ulises.jpg", alt="2014, Ulises Valencia")
-					//- 	//- .pho-red-circle
+					.mb-wrap.halfwidth.fourheight.bottom.left.p_layer
+						.uv-gray-rect
 
-					//- .mb-wrap.fullwidth.sixheight.bottom.right.p_layer
-					//- 	.uv-yellow-circle
+					.photo.p_layer
+						img(src="img/people/01_Ulises.jpg", alt="2014, Ulises Valencia")
+						//- .pho-red-circle
 
-					//- .mb-wrap.halfwidth.fourheight.bottom.left.p_layer
-					//- 	.uv-blue-quartcircle
+					.mb-wrap.fullwidth.sixheight.bottom.right.p_layer
+						.uv-yellow-circle
 
-					//- .mb-wrap.fullwidth.halfheight.top.left.p_layer
-					//- 	.uv-red-circle
+					.mb-wrap.halfwidth.fourheight.bottom.left.p_layer
+						.uv-blue-quartcircle
+
+					.mb-wrap.fullwidth.halfheight.top.left.p_layer
+						.uv-red-circle
 
 
 					//- MAURO TORRES T.
@@ -45,9 +49,11 @@ block content
 
 					//- .mb-wrap.doublewidth.sixheight.top.right.p_layer
 					//- 	.mt-pink-circle
+					//- 		+sun-bottom-right("#ffd3cd", "#13bb71")
 
 					//- .mb-wrap.doublewidth.fourheight.bottom.right.p_layer
 					//- 	.mt-yellow-polygon
+					//- 		//- +pill-shattered("#ffdc51")
 
 
 					//- LIC. POLLITO
@@ -65,6 +71,7 @@ block content
 
 					//- .mb-wrap.doublewidth.sixheight.top.left.p_layer
 					//- 	.lp-blue-polygon
+					//- 		+stairs1("#79D5FF", "#FFD4CD")
 
 					//- .mb-wrap.doublewidth.fullheight.bottom.right.p_layer
 					//- 	.lp-blue-pill
@@ -91,6 +98,7 @@ block content
 
 					//- .mb-wrap.doublewidth.sixheight.top.left.p_layer
 					//- 	.jf-gray-moon
+					//- 		+sun-bottom("#e4eaef", "#002d85")
 
 
 					//- Alvaro Chan
@@ -118,6 +126,7 @@ block content
 					//- Alan (R3do) Rodriguez
 					//- .mb-wrap.triplewidth.halfheight.bottom.left.p_layer
 					//- 	.r3-blue-shape
+					//- 		+stairs3("#79D5FF", "#002E86")
 
 					//- .mb-wrap.fourwidth.doubleheight.top.right.p_layer
 					//- 	.r3-pink-rect
@@ -154,6 +163,7 @@ block content
 
 					//- .mb-wrap.doublewidth.sixheight.top.left.p_layer
 					//- 	.gp-blue-eye
+					//- 		+eye("#79d4ff")
 
 
 					//- Carlos Alvarado
@@ -171,6 +181,7 @@ block content
 
 					//- .mb-wrap.halfwidth.fourheight.bottom.right.p_layer
 					//- 	.ca-yellow-circle
+					//- 		+sun-bottom("#ffdc51", "#79d4ff")
 
 					//- .mb-wrap.doublewidth.sixheight.top.left.p_layer
 					//- 	.ca-play-pills
@@ -187,6 +198,7 @@ block content
 
 					//- .mb-wrap.halfwidth.fourheight.bottom.left.p_layer
 					//- 	.oa-green-pill
+					//- 		+pill-vert("#13bb71")
 
 					//- .photo.p_layer
 					//- 	img(src="img/people/05_Chaps.jpg", alt="2015, Oscar Alvarado")
@@ -214,6 +226,7 @@ block content
 
 					//- .mb-wrap.doublewidth.sixheight.top.left.p_layer
 					//- 	.ma-pink-shape
+					//- 		+stairs2("#FFD4CD", "#002E86")
 
 					//- .mb-wrap.halfwidth.fourheight.bottom.left.p_layer
 					//- 	.ma-yellow-circle
@@ -228,6 +241,7 @@ block content
 
 					//- .mb-wrap.halfwidth.fourheight.bottom.right.p_layer
 					//- 	.agg-blue-shape
+					//- 		+stairs1("#79D5FF", "#FFDC51")
 
 					//- .photo.p_layer
 					//- 	img(src="img/people/11_Alma.jpg", alt="2015, Alma Garcia Gil")
@@ -299,6 +313,7 @@ block content
 
 					//- .mb-wrap.doublewidth.sixheight.top.left.p_layer
 					//- 	.ea-pink-shape
+					//- 		+stairs2("#FFD4CD", "#79d4ff")
 
 					//- .mb-wrap.halfwidth.fourheight.bottom.left.p_layer
 					//- 	.ea-yellow-circle
@@ -319,6 +334,7 @@ block content
 
 					//- .mb-wrap.doublewidth.sixheight.top.left.p_layer
 					//- 	.sm-green-pill
+					//- 		+pill-vert("#13bb71")
 
 					//- .mb-wrap.halfwidth.fourheight.bottom.left.p_layer
 					//- 	.sm-pink-circle
@@ -348,6 +364,7 @@ block content
 
 					//- .mb-wrap.fourwidth.doubleheight.top.right.p_layer
 					//- 	.sg-pink-shape
+					//- 		+sun-bottom("#ffd3cd", "#13bb71")
 
 
 					//- Karla Padilla
@@ -370,6 +387,7 @@ block content
 
 					//- .mb-wrap.fourwidth.doubleheight.top.right.p_layer
 					//- 	.kp-pink-shape
+					//- 		+sun-bottom("#FFD4CD", "#13BC72")
 
 
 					//- Ryan Hicks
@@ -393,6 +411,7 @@ block content
 
 					//- .mb-wrap.fourwidth.doubleheight.top.right.p_layer
 					//- 	.rh-blue-shape
+					//- 		+stairs1("#79D5FF", "#FFD4CD")
 
 
 					//- Karla Nava
@@ -427,6 +446,10 @@ block content
 					//- .mb-wrap.halfwidth.fourheight.bottom.right.p_layer
 					//- 	.edlc-red-rect
 
+					//- .mb-wrap.fourwidth.doubleheight.top.right.p_layer
+					//- 	.edlc-blue-shape
+					//- 		+stairs3("#79D5FF", "#002E86")
+
 					//- .photo.p_layer
 					//- 	img(src="img/people/20_Edgar-TCB.jpg", alt="2018, Edgar De La Cruz")
 
@@ -436,9 +459,6 @@ block content
 					//- .mb-wrap.halfwidth.fourheight.bottom.left.p_layer
 					//- 	.edlc-gray-circle
 					//- 		.inner-green
-
-					//- .mb-wrap.fourwidth.doubleheight.top.right.p_layer
-					//- 	.edlc-blue-shape
 
 
 					//- Zack Pedersen
@@ -453,32 +473,35 @@ block content
 
 					//- .mb-wrap.doublewidth.sixheight.top.left.p_layer
 					//- 	.zp-yellow-shape
+					//- 		//- +pill-shattered("#ffdc51")
 
 					//- .mb-wrap.halfwidth.fourheight.bottom.left.p_layer
 					//- 	.zp-pink-circle
+					//- 		+sun-bottom-right("#ffd3cd", "#13bb71")
 
 					//- .mb-wrap.fourwidth.doubleheight.top.right.p_layer
 					//- 	.zp-blue-circle
 
 
 					//- Robin Noguier
-					.mb-wrap.triplewidth.halfheight.bottom.left.p_layer
-						.rn-pink-rect
+					//- .mb-wrap.triplewidth.halfheight.bottom.left.p_layer
+					//- 	.rn-pink-rect
 
-					.mb-wrap.halfwidth.fourheight.bottom.right.p_layer
-						.rn-blue-rect
+					//- .mb-wrap.halfwidth.fourheight.bottom.right.p_layer
+					//- 	.rn-blue-rect
 
-					.mb-wrap.doublewidth.sixheight.top.left.p_layer
-						.rn-green-pill
+					//- .mb-wrap.doublewidth.sixheight.top.left.p_layer
+					//- 	.rn-green-pill
 
-					.photo.p_layer
-						img(src="img/people/22_Robin.jpg", alt="2018, Robin Noguier")
+					//- .photo.p_layer
+					//- 	img(src="img/people/22_Robin.jpg", alt="2018, Robin Noguier")
 
-					.mb-wrap.halfwidth.fourheight.bottom.left.p_layer
-						.rn-blue-eye
+					//- .mb-wrap.halfwidth.fourheight.bottom.left.p_layer
+					//- 	.rn-blue-eye
+					//- 		+eye("#79d4ff")
 
-					.mb-wrap.fourwidth.doubleheight.top.right.p_layer
-						.rn-yellow-circle
+					//- .mb-wrap.fourwidth.doubleheight.top.right.p_layer
+					//- 	.rn-yellow-circle
 
 					
 
