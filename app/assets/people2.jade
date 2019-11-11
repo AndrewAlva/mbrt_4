@@ -1,0 +1,55 @@
+extends templates/layout.jade
+include _modules/svgs/_peoplegraphs-mixins.jade
+
+block content
+	//- .tester
+
+	#people-wrap
+		.inner-wrap
+			header.mbrt-head
+				include _modules/_four-logo.jade
+
+		.grid-wrap
+			.inner-wrap
+				.parallax-wrap.people-graphs.perspective-500
+
+					//- Robin Noguier
+					.mb-wrap.triplewidth.halfheight.bottom.left.px_layer(data-parallax-intensity=0.2)
+						.rn-pink-rect
+
+					.mb-wrap.halfwidth.fourheight.bottom.right.px_layer(data-parallax-intensity=0.9)
+						.rn-blue-rect
+
+					.mb-wrap.doublewidth.sixheight.top.left.px_layer(data-parallax-intensity=0.5)
+						.rn-green-pill
+
+					.photo.p_layer
+						img(src="img/people/22_Robin.jpg", alt="2018, Robin Noguier")
+
+					.mb-wrap.halfwidth.fourheight.bottom.left.px_layer(data-parallax-intensity=0.5)
+						.rn-blue-eye
+							+eye("#79d4ff")
+
+					.mb-wrap.fourwidth.doubleheight.top.right.px_layer(data-parallax-intensity=1)
+						.rn-yellow-circle
+
+					
+
+				.data-wrap
+					h3._year 
+						span.mask-container
+								span.up-in 019
+
+					._name
+						h2 
+							span.mask-container
+								span.up-in Coming
+									//- span.sup (R3do)
+						h2 
+							span.mask-container
+								span.up-in Soon
+
+
+
+
+

@@ -13,9 +13,15 @@ window.onload = function() {
     // console.log("Page fully loaded.");
     // console.log("Initialize.js");
 
+    // Init request animation frame
+    RAF.init();
+
     // Slide up: intro animation
     Intro.init();
 
     // Activate 3D rotation layers
-    Perspective.init();
+    RAF.add(Perspective);
+
+    // Activate Displacement parallax layers
+    RAF.add(Parallax);
 }

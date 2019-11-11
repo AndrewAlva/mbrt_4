@@ -79,19 +79,23 @@ var Perspective = {
 		});
 	},
 
+	render: function(){
+		this.update();
+	},
+
 
 	init: function(){
 		this.setCenter();
 		this.setupListeners();
-		P_animate();
+		// P_animate();
 	}
 }
 
-function P_animate(){
-	requestAnimationFrame(P_animate);
-	render();
-}
+// function P_animate(){
+// 	requestAnimationFrame(P_animate);
+// 	render();
+// }
 
-function render(){
-	Perspective.update();
-}
+// function render(){
+// 	Perspective.update();
+// }
