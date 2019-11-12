@@ -18,7 +18,7 @@ var Perspective = {
 		y: 0
 	},
 
-	rotationLimit: 5, // in degrees
+	rotationLimit: 15, // in degrees
 	rotation: {
 		x: 0,
 		y: 0

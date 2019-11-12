@@ -18,7 +18,7 @@ var Parallax = {
 		y: 0
 	},
 
-	displacementLimit: 300, // in pixels
+	displacementLimit: 50, // in pixels
 	displacementIntensity: [], // percentage range from 0 to 1
 	displacement: {
 		x: 0,
